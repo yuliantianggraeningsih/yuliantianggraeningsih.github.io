@@ -4,7 +4,7 @@ title:  "Inception Movie"
 author: john
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
-image: assets/images/11.jpg
+video: https://video.twimg.com/amplify_video/1758389496603901952/vid/avc1/640x360/uwpcb5xCvYdkOmLt.mp4?tag=14
 ---
 
 <center><br /><br /><h2 style="text-align: center;"><b>FULL VIDEO</b></h2>
