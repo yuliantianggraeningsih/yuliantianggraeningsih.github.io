@@ -1,7 +1,7 @@
 # Site
 name: "AdabunAlima5"
 title: "AdabunAlima"
-description: "Jekyll template, Medium styled, free for bloggers."
+description: "My blog"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
@@ -13,12 +13,12 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
+  admin:
+    name: Admin
+    display_name: Admin
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
+    web: https://www.xselebgram.xyz
     twitter: https://twitter.com/wowthemesnet
     description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
   john:
