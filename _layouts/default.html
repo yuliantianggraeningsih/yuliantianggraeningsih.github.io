@@ -35,6 +35,35 @@ ga('send', 'pageview');
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
+
+
+	<!-- Breadcrumb Blogger by igniel.com -->
+<script type='application/ld+json'>{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "<data:blog.homepageUrl.canonical/>"
+    <b:if cond='!data:post.labels'>}<b:else/>},<b:loop index='i' values='data:post.labels' var='label'>
+    {
+      "@type": "ListItem",
+      "position": <b:with value='data:i + 2' var='num'><b:eval expr='data:num'/></b:with>,
+      "name": "<data:label.name/>",
+      "item": "<data:label.url.canonical/>"
+      <b:if cond='data:post.labels.size != data:i + 1'>},<b:else/>}</b:if></b:loop></b:if>
+  ]
+}</script>
+
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","url":"<data:blog.homepageUrl/>","potentialAction":{"@type":"SearchAction","target":"<data:blog.searchUrl/>?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+
+
+
+
+	
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
