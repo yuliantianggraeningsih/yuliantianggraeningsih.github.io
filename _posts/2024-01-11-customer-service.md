@@ -5,8 +5,6 @@ author: john
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
 image: assets/images/11.jpg
-description: "Download Video."
-rating: 4.6
 ---
 
 <center><br /><br /><h2 style="text-align: center;"><b>FULL VIDEO</b></h2>
@@ -294,12 +292,6 @@ rating: 4.6
   
 </center>
 
-<script type="text/javascript">
-   var uid = '342117';
-   var wid = '711388';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
 
 
 
