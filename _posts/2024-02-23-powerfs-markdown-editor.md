@@ -3,11 +3,9 @@ layout: post
 title:  "Top Culinary Business Opportunities in Malawi: Exploring the Thriving Food Industry"
 author: admin
 categories: [blog]
-image: assets/images/16.jpg
+image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s640/images.jpeg
 ---
 
-
-<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s640/images.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="479" data-original-width="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s320/images.jpeg"/></a></div>
 
 
 
