@@ -195,7 +195,7 @@ function bwstocShow() {
             </p>
 
             <!-- Post Categories -->
-            <div class="after-post-cats">
+            <div class="after-post-cats" style="height:1px; overflow:auto;">
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
