@@ -3,6 +3,7 @@ layout: post
 title:  "Top Culinary Business Opportunities in Malawi: Exploring the Thriving Food Industry"
 author: admin
 categories: [blog]
+tags: [red, yellow]
 image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s640/images.jpeg
 ---
 
