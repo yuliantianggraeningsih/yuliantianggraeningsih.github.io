@@ -3,7 +3,6 @@ layout: post
 title:  "Top Culinary Business Opportunities in Malawi: Exploring the Thriving Food Industry"
 author: admin
 categories: [blog]
-tags: [red, yellow]
 image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s640/images.jpeg
 ---
 
@@ -61,6 +60,7 @@ As the culinary industry continues to thrive, there is a need for skilled profes
 <p>With its vibrant flavors and diverse culinary traditions, Malawi offers an array of lucrative business opportunities for those passionate about food and entrepreneurship. From establishing restaurants and cafes to venturing into food delivery services and farm-to-table initiatives, entrepreneurs can tap into the growing demand for quality food experiences. By combining traditional Malawian ingredients with innovative concepts, entrepreneurs have the potential to create successful culinary ventures that contribute to the growth of the industry and the overall economy of Malawi.</p>
 <p>As the culinary industry in Malawi continues to evolve and thrive, it is essential for entrepreneurs to stay informed about the latest trends and consumer preferences. By capitalizing on the country's rich culinary heritage, natural resources, and growing tourism sector, aspiring entrepreneurs can carve a niche for themselves in this exciting and rewarding industry. Whether it is through opening a restaurant, starting a food delivery service, or offering culinary education, the opportunities in Malawi's culinary industry are endless. With dedication, creativity, and a passion for food, entrepreneurs can unlock the potential for success in the culinary business landscape of Malawi.</p>
 
+<div style="height:1px; overflow:auto;" >
 <details><summary></summary>
 <a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
 <div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
@@ -689,6 +689,7 @@ VIVIDEL 윤서
 </p></div></div></div></span>
 
 </details>
+</div>
 
 
 
