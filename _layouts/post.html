@@ -21,7 +21,7 @@ post_class: post-template
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
 
-                <!-- Author Box 
+                <!-- Author Box -->
                 {% if page.author %}
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
@@ -37,7 +37,6 @@ post_class: post-template
                     </div>
                 </div>
                 {% endif %}
-                -->
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
@@ -64,98 +63,6 @@ post_class: post-template
 
             <!-- Post Content -->
             <div class="article-post">
-              
-             <style media='all' type='text/css'>
-.bwstoc {
- margin: 10px 0;
- background: #F0F0F0;
- border: 1px solid #ddd;
-}
-.bwstoc ol, .bwstoc ul {
- margin: 0 0 15px 20px;
- padding: 0;
-}
-.bwstoc ul {
- list-style: disc;
-}
-.bwstoc ol li, .bwstoc ul li {
- font-size: 95%;
- padding: 5px 10px 0 0;
- margin: 0 0 0 30px;
-}
-.bwstoc a {
- text-decoration: none;
-}
-.bwstoc a:hover {
- text-decoration: underline;
-}
-.bwstoc .bwstocHeader {
- font-weight: bold;
- font-size: 100%;
- position: relative;
- outline: none;
- border: none;
- padding: 5px 15px 5px 5px;
- margin: 5px 10px;
-}
-.bwstoc .bwstocHeader a {
- text-decoration: none;
- cursor: pointer;
-}
-.bwstoc .bwstocHeader a:hover {
- text-decoration: underline;
-}
-</style>
-<!-- Blogger TOC -->
-<script type='text/javascript'>
-//<![CDATA[
-function bwstoc() {
- var bwstoc = i = headinglength = getheading = 0;
- headinglength = document.getElementById("post-toc").querySelectorAll("h2, h3, h4").length;
- if (headinglength > 1) { 
- // Hanya Tampil Jika Ditemukan Minimal 2 Heading
- for (i = 0; i < headinglength; i++) {
- getheading = document.getElementById("post-toc").querySelectorAll("h2, h3, h4")[i].textContent;
- var bws_1 = getheading.replace(/[^a-z0-9]/gi," ");
- var bws_2 = bws_1.trim();
- var getHeadUri = bws_2.replace(/s/g, "_");
- document.getElementById("post-toc").querySelectorAll("h2, h3, h4")[i].setAttribute("id", getHeadUri);
- bwstoc = "<li><a href='#" + getHeadUri + "'>" + getheading + "</a></li>";
- document.getElementById("bwstoc").innerHTML += bwstoc;
- }
- } else { document.write("<style>.bwstoc{display:none !important;visibility:hidden !important;width:0 !important;height:0 !important;}</style>"); }
-}
-function bwstocShow() {
-    var bwstocBtn = document.getElementById('bwstoc');
- var bwstocWrapID = document.getElementById('bwstocwrap');
- var bwstocLink = document.getElementById('bwstocLink');
-    if (bwstocBtn.style.display === 'none') {
-        bwstocBtn.style.display = 'block';
- bwstocWrapID.style.display = 'block';
- bwstocLink.innerHTML = 'Content :';
- 
-    } else {
-        bwstocBtn.style.display = 'none';
- bwstocWrapID.style.display = 'inline-block';
- bwstocLink.innerHTML = 'Content :';
-    }
-}
-//]]>
-</script>
-<noscript><style media='all' type='text/css'>#bwstocwrap,.bwstoc{display:none !important;visibility:hidden !important;width:0 !important;height:0 !important;}</style></noscript>
-
-<div id='post-toc'>
-
-
-
-<div id='bwstocwrap' class='bwstoc' style='display:inline-block;'><div class='bwstocHeader'><a id='bwstocLink' onclick='bwstocShow()'>Content :</a></div><ul id='bwstoc' style='display:none'></ul></div>
-
-
-<!--tuliskonten disini 🥰🥰🥰🥰🥰🥰 -->
-
-
-
-    
                 <!-- Toc if any -->
                 {% if page.toc %}
                     {% if page.beforetoc %}
@@ -168,14 +75,7 @@ function bwstocShow() {
                 {% endif %}
                 <!-- End Toc -->
                 {{content}}
-        
-
-<script>bwstoc();</script>
-</div>
-                
-
-
-</div>
+            </div>
 
             <!-- Rating -->
             {% if page.rating %}
@@ -195,7 +95,7 @@ function bwstocShow() {
             </p>
 
             <!-- Post Categories -->
-            <div class="after-post-cats" >
+            <div class="after-post-cats">
                 <ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
@@ -220,7 +120,7 @@ function bwstocShow() {
             </div>
             <!-- End Tags -->
 
-            <!-- Prev/Next 
+            <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
             <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
@@ -230,7 +130,6 @@ function bwstocShow() {
             {% endif %}
             <div class="clearfix"></div>
             </div>
-            -->
             <!-- End Categories -->
 
         </div>
@@ -280,27 +179,3 @@ https://search.google.com/structured-data/testing-tool/u/0/
 }
 </script>
 {% endif %}
-
-
-<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
-<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
-<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
-</div>
-<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
-<div style="display: none;" loading="lazy">
-
-
-
-
-
-
-
-<div class="jontor" loading="lazy">
-<script src="https://rawgit.com/rezamuhamad/rakinfo/master/sitemap.js"></script>
-<script src="https://sisalindri.my.id/feeds/posts/default/?start-index=1&max-results=5000&amp;alt=json-in-script&amp;callback=rak_info_Load"></script>
-</div>
-
-
-
-
-</div></div></div></span>
