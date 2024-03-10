@@ -34,17 +34,6 @@ ga('send', 'pageview');
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
-
-<script type="text/javascript">
-   var uid = '342117';
-   var wid = '712879';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
-	
-
-
-	
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -159,7 +148,15 @@ ga('send', 'pageview');
 		</div>
 	</div>
 </div>
-    <center style="height:250px; overflow:auto;" >
+
+    
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+    
+        <center style="height:250px; overflow:auto;" >
 	    
   
   <script type="text/javascript">
@@ -291,12 +288,9 @@ ga('send', 'pageview');
 </script><br />
   <script type='text/javascript' src='//evendisciplineseedlings.com/15/7e/85/157e854cf7532a46621e7daac7d4402c.js'></script>
    <br /></center>	    
+   
     
-
-<!-- Begin Footer
-================================================== -->
-<footer class="footer">
-    <div class="container">
+    
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
@@ -333,7 +327,6 @@ ga('send', 'pageview');
 
 </body>
 </html>
-
 
 
 
