@@ -1,9 +1,9 @@
 ---
 layout: postdukuhmaga
-title:  "Top Culinary Business Opportunities in Malawi: Exploring the Thriving Food Industry"
+title:  "alexiitha_moreno - Top Culinary Business Opportunities in Malawi: Exploring the Thriving Food Industry"
 author: admin
-categories: [blog]
-image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5JOtHK2aaDW2OFn-aJR-N3_oI3JP9BcnGjelBZkQJ6dgTNuu64iPYfVcBj97OmSJxOW-dydcFT5tuxMQCd8Mj_gVch128gLURjSn3XtnRPyw9aWzAlAOk2GI0vf-M3jDu6R1IpP39vrlY7WNmiLEhBGVwt-qzvkbZiXxMI_cj41MdyFcE/s640/images.jpeg
+categories: [blog,alexiitha_moreno]
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTauE8j3O2KjzYbLJKph-bLX1hXuLoSSPuFap28lCfNTmGXiZemAtVKuvKT_fdoFkfwjMa3A9zRexaTg95kBlDpOfzd4zgKRQt_5UFCEU6QfBCE5P0gnc9_7_1Wjk8RgrBbJAdEUTZRo3aqO2NlXrAzCNBsXQYv4U3YuqAGFHuaZ-1xXdb4vo4CZmTW3w/s1600/alexiitha_moreno%0A.jpg"
 ---
 
 
@@ -11,7 +11,7 @@ image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimB9rsQaEQb_5J
 
 
 <p>Malawi, a landlocked country located in southeastern Africa, is not only known for its breathtaking landscapes and vibrant culture but also for its diverse and delicious cuisine. With a growing population and increasing tourism, the culinary industry in Malawi is experiencing an upward trend, presenting numerous business opportunities for entrepreneurs and food enthusiasts alike. In this article, we will explore the top culinary business opportunities in Malawi, highlighting the thriving food industry and lucrative ventures that await those who are passionate about food and entrepreneurship.</p>
-<h2>Top Culinary Business Opportunities in Malawi</h2>
+<h2>alexiitha_moreno - Top Culinary Business Opportunities in Malawi</h2>
 <ol>
 <li>
 <p>Restaurant and Cafe Establishments:
