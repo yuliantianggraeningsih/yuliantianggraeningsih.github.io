@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Privacy Policy
+title: "Download full Contents #1"
 permalink: /page1
 comments: true
 ---
