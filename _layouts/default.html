@@ -208,11 +208,7 @@ ga('send', 'pageview');
 
 <div class="container">
 
-<!-- ❤ ploating start ❤-->
 
-
-
-<!--❤ ploating end ❤-->
 
 	
 
@@ -222,7 +218,17 @@ ga('send', 'pageview');
     {{ content }}
 </div>    
 </div>
+<!-- ❤ ploating start ❤-->
+<div class="row listrecent">
 
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+<!--❤ ploating end ❤-->
 <!-- Categories Jumbotron
 ================================================== -->
 <div class="jumbotron fortags" style="height:1px; overflow:auto;" >
