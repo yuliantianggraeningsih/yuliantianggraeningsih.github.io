@@ -11,31 +11,13 @@ layout: default
     <div class="article-post">
     {{content}}
 
-	    <h3><span>Latest Posts</span></h3>
-
-    
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
+	    
 
     </div>
 
 </section>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-    </div>
+
 
     {% if page.comments == true %}
 
