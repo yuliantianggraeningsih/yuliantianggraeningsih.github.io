@@ -5,8 +5,8 @@ permalink: /iframe1
 comments: true
 ---
 
-<div id='flo98ads' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; top:0;z-index:9999'>
-    <div style='text-align:center;display:block;max-width:728px;height:auto;overflow:hidden;margin:auto'>
+<div id='flo98ads' style='width:100%;margin:auto; text-align:center;float:none;overflow:auto; display:scroll;position:fixed; top:0;z-index:9999'>
+    <div style='text-align:center;display:block;max-width:728px;height:3000px;overflow:auto;margin:auto'>
       
 
 
