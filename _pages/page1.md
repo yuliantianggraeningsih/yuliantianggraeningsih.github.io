@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ads1
 title: "Download full Contents"
 permalink: /page1
 comments: true
