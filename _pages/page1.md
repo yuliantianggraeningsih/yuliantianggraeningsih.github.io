@@ -1,5 +1,5 @@
 ---
-layout: ads1
+layout: page
 title: "How to Monetize Your Skills and Content on Social Media"
 permalink: /page1
 ---
