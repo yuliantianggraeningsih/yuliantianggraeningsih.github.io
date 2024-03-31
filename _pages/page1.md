@@ -1,6 +1,6 @@
 ---
 layout: ads1
-title: "How to Monetize Your Skills and Content on Social Media"
+title: "Download Full Video"
 permalink: /page1
 ---
 
