@@ -5,6 +5,6 @@ permalink: /page1
 ---
 
 
- <br /><p>
+ <br />
  <a href="https://www.ioma.my.id" target="_blank">Download 📥</a>
-</p><br />
+<br />
