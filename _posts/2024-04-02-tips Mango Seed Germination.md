@@ -1,6 +1,6 @@
 ---
 layout: postpolos
-title:  "Factors Affecting Mango Seed Germination: Exploring the Timeline of Sprouting!"
+title:  "Factors Affecting Mango Seed Germination"
 author: admin
 tags: [blog]
 categories: [blog]
