@@ -7,6 +7,7 @@
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
 
+	
 {% seo %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -16,141 +17,10 @@
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-<style>
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 2rem 0;
-  width: 100%;
-}
-th, td {
-  padding: 1rem 1.5rem;
-  text-align: left;
-}
-th {
-  background-color: #008c5f; /* header background color */
-  color: #fff; /* header text color */
-  font-weight: 600;
-}
-tr {
-  padding: 0;
-}
-td {
-  vertical-align: middle;
-}
-tr:nth-child(even) td {
-  background-color: rgba(0, 0, 0, .075); /* striped background color */
-}
-@media screen and (max-width: 640px) {
-  thead, th {
-    display: none;
-  }
-  tr, td {
-    display: block;
-  }
-  tr {
-    border: 1px solid rgba(0, 0 , 0 ,.15);
-    margin-bottom: 2rem;
-  }
-  tr:last-child {
-    margin-bottom: 0;
-  }
-  tr:nth-child(even) td {
-    background-color: transparent;
-  }
-  td {
-    clear: both;
-    text-align: right;
-  }
-  td:before {
-    content: attr(data-label)': ';
-    float: left;
-    font-weight: bold;
-    margin-right: 1rem;
-  }
-}</style>
-	<style type="text/css">
-.bcd140526_post_feed li.item {
-    display: block;
-    clear: both; 
-height: auto;
-    margin: 15px 0 0 0;
-    padding: 15px 0 0 0;
-    border-top: 1px dotted #BBB;
-}
-.bcd140526_post_feed ul {
-    margin: 0;
- height: auto;
-    padding: 0;
-}
-.bcd140526_post_feed li.item.item-0 {
-    margin: 0;
-    padding: 0; 
-height: auto;
-    border: none;
-}
-.bcd140526_post_feed li.item h3.title {
-    display: block;
- height: auto;
-    margin: 0 0 5px 0;
-}
-
-.bcd140526_post_feed li.item div.meta {
-    font-size: 11px;
- height: auto;
-    color: #999;
-	margin: 0 0 5px 0;
-}
-.bcd140526_post_feed li.item div.meta .meta-item {
-    display: inline-block;
-	*display: inline;
-	zoom: 1;
-    margin: 0 1em 0 0;
- height: auto;
-}
-.bcd140526_post_feed li.item p.snippet {
-    line-height: 1.5em;
-	margin: 0;
- height: auto;
-}
-.bcd140526_post_feed.list a.thumbnail {
-    margin: 0 7px 7px 0;
-    float: left;
-    display: block;
-    line-height: 1; 
-height: auto;
-	/*
-    width: 48px;
-    height: 48px;
-	*/
-    overflow: hidden;
-    position: relative;
-}
-.bcd140526_post_feed.list a.thumbnail img {
-    width: auto;
-    height: auto;
-}
-.bcd140526_post_feed li.item a.cate {
-    display: block;
-    margin: 0 0 5px 0;
- height: auto;
-}
-div.bcd140526_post_feed.column a.thumbnail {
-    display: block;
-    width: 100%;
-    line-height: 1;
-    margin: 0 0 5px 0; 
-height: auto;
-}
-div.bcd140526_post_feed.column a.thumbnail img {
-    width: 100%;
-    height: auto;
-}
-</style>
-
 
 <meta name="yandex-verification" content="084384b9f74df25c" />
 	
+
 </head>
 
 {% if jekyll.environment == 'production' %}
@@ -166,7 +36,7 @@ ga('send', 'pageview');
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}" >
+<body class="{{layout}}" loading="lazy" >
 
 	    
 
@@ -181,6 +51,7 @@ ga('send', 'pageview');
 
 	    
 	
+
 	
 	
 	
@@ -250,18 +121,20 @@ ga('send', 'pageview');
 <div class="container">
 
 
-
-	
-
 <!-- Content
 ================================================== -->
 <div class="main-content">
     {{ content }}
-</div>
+
+
+    
+    
+</div>    
 </div>
 
 
-	<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+	
+ <a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
 <div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
 <div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
 </div>
@@ -269,20 +142,9 @@ ga('send', 'pageview');
 <div style="display: none;" loading="lazy">
 
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Categories Jumbotron
+	<!-- Categories Jumbotron
 ================================================== -->
-<div class="jumbotron fortags" style="height:1px; overflow:auto;" >
+<div class="jumbotron fortags" >
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
@@ -302,27 +164,13 @@ ga('send', 'pageview');
             {% endif %}
             {% assign categories_list = nil %}
 		</div>
-	
-</div></div></div></span>
-	
-
-
-	
-	
-
-
-
-
-
-
-
-
-	
-
-	</div>    
+	</div>
 </div>
 
-    <br />
+	</div></div></div></span>
+	
+	
+	
 
 <!-- Begin Footer
 ================================================== -->
@@ -333,8 +181,10 @@ ga('send', 'pageview');
     
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-		    <br />Email: adabunalima5@gmail.com
+             Email: adabunalima5@gmail.com <br />
+		    Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+		    
+		    
             </div>
             
         </div>
@@ -500,5 +350,6 @@ ga('send', 'pageview');
 	  
 </body>
 </html>
+
 
 
