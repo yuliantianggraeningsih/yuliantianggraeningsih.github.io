@@ -1,41 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png"/>
 
 
-
-	
 {% seo %}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.title }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+  "uploadDate": "{{ page.date }}",
+  "duration": "PT55M47S",
+  "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
+}
+</script>
 
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
-
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-
-<meta name="yandex-verification" content="084384b9f74df25c" />
+	<!--breadcrumb-->
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "photo",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?photo"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "video",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?video"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "leaked contents",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?leaked"
+		},
+		{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "more collections",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?collection"
+		}
+	]
+}
+</script><!--breadcrumb-->
 	
+	<!-- sitelinks -->
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"url": "{{ site.url }}",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "{{ site.url }}{{ site.baseurl }}/?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script><!-- sitelinks -->
+	
+	
+	<!-- how to -->
+	<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "HowTo",
+	"name": "{{ page.title }}",
+	"description": "{{ page.title }}",
+	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+	"totalTime": "PT57M",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "2"
+	},
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "find download link",
+			"text": "find download link on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "click download button",
+			"text": "click download button on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		}
+	]
+}
+</script><!-- how to -->
 
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+<link href="{{ site.url }}/assets/css/screen.css" rel="stylesheet"/>
+
+<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet"/>
+
+<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+
+
+
+
+	
+	
+	
+<meta name="yandex-verification" content="eb02b88e0cf19b61" />
+
+	
 </head>
 
-{% if jekyll.environment == 'production' %}
-<!-- change your GA id in _config.yml -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '{{site.google_analytics}}', 'auto');
-ga('send', 'pageview');
-</script>
-{% endif %}
 
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}" loading="lazy" >
+<body class="{{layout}}" >
 
 	    
 
@@ -46,9 +138,6 @@ ga('send', 'pageview');
 
 
 
-
-
-	    
 	
 
 	
@@ -57,20 +146,20 @@ ga('send', 'pageview');
 	
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
 	</noscript>
 
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<center class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
 
     <div class="container pr-0">
 
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    <a class="navbar-brand" href="{{ site.url }}/">
+    <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}"/>
     </a>
     <!-- End Logo -->
 
@@ -89,15 +178,15 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+                <a class="nav-link" href="{{ site.url }}/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/terms-and-conditions">Terms and Conditions</a>
+                <a class="nav-link" href="{{ site.url }}/terms-and-conditions">Terms and Conditions</a>
                 </li>
 		    
 		    <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a>
+                <a class="nav-link" href="{{ site.url }}/privacy-policy">Privacy Policy</a>
                 </li>
 
 		    <br />
@@ -111,14 +200,14 @@ ga('send', 'pageview');
     </div>
 
     </div>
-</nav>
+</center>
 <!-- End Navigation
 ================================================== -->
 
 <div class="site-content">
 
 <div class="container">
-
+	
 
 <!-- Content
 ================================================== -->
@@ -126,50 +215,84 @@ ga('send', 'pageview');
     {{ content }}
 
 
-    
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+    <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<video id='my-video' controls muted autoplay style="width:100%;">
+   <source data-fluid-hd src='https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4'
+ title='{{ page.title }}' type='video/mp4' />
+</video>
+<script type="application/javascript">
+    var testVideo = fluidPlayer(
+        "my-video",
+{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 1,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoplay": false,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+	},
+	"vastOptions": {
+	"adList": [
+                    {
+                        "roll": "preRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=a2dfbe20ee755d8f5b94529596c12352"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=6f6732348ac4680e3e347f51038ca52e",
+                        "timer": 2
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=b320bff569bb5535540366abcef11a09",
+                        "timer": 3
+                    },
+{
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=f76eb4092d4b94ed2411172982571a87",
+                        "timer": 4
+                    },
+            ]
+        }
+}
+    );
+</script>  
+</div></div></div></span>
+
+	      
     
 </div>    
 </div>
 
 
 	
- <a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
-<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
-<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
-</div>
-<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
-<div style="display: none;" loading="lazy">
-
-
-	<!-- Categories Jumbotron
-================================================== -->
-<div class="jumbotron fortags" >
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-		</div>
-	</div>
-</div>
-
-	</div></div></div></span>
+ 
 	
 	
-	
+
 
 <!-- Begin Footer
 ================================================== -->
@@ -180,10 +303,8 @@ ga('send', 'pageview');
     
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-             Email: adabunalima5@gmail.com <br />
-		    Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-		    
-		    
+                Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
+		
             </div>
             
         </div>
@@ -201,18 +322,17 @@ ga('send', 'pageview');
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="{{ site.url }}/assets/js/mediumish.js"></script>
 
 {% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+<script src="{{ site.url }}/assets/js/lazyload.js"></script>
 {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
-	
 
 
 
@@ -222,134 +342,148 @@ ga('send', 'pageview');
 
 
 
-	<div id='ds' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; bottom:0%;z-index:9999'>
+
+
+
+
+<div id='ds' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; bottom:0%;z-index:9999'>
          <div><a id='close-ds' onclick='document.getElementById(&apos;ds&apos;).style.display = &apos;none&apos;;' style='cursor:pointer;'><img alt='close' src='https://3.bp.blogspot.com/-ZZSacDHLWlM/VhvlKTMjbLI/AAAAAAAAF2M/UDzU4rrvcaI/s1600/btn_close.gif' title='close button'/></a></div>
     <div style='background-color:#fff; text-align:center;display:block;max-width:100%;height:50px;overflow:auto;margin:auto'>
 <script type="text/javascript">
 	atOptions = {
-		'key' : '7b4934b9a654d04b9b3f8792898d065b',
+		'key' : 'a03ccd983783081c32e98687fa158143',
 		'format' : 'iframe',
 		'height' : 50,
 		'width' : 320,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/7b4934b9a654d04b9b3f8792898d065b/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/a03ccd983783081c32e98687fa158143/invoke.js"></script>
 <br /><script type="text/javascript">
 	atOptions = {
-		'key' : 'a1f1be9129d1740ac77a71abe067b98f',
+		'key' : '624f7847107a10488032a7a551cba5b8',
 		'format' : 'iframe',
 		'height' : 60,
 		'width' : 468,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/a1f1be9129d1740ac77a71abe067b98f/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/624f7847107a10488032a7a551cba5b8/invoke.js"></script>
 <script type="text/javascript">
 	atOptions = {
-		'key' : '615e81e0a564d30112632b0080c258d7',
+		'key' : 'ac9a478c23cd777b121d82c4be9b2966',
 		'format' : 'iframe',
 		'height' : 300,
 		'width' : 160,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/615e81e0a564d30112632b0080c258d7/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/ac9a478c23cd777b121d82c4be9b2966/invoke.js"></script>
 <script type="text/javascript">
 	atOptions = {
-		'key' : '232e9c1b69adf7a734e6278405b2be26',
+		'key' : '5fb4250a8668afd9928b28b1f9666ffb',
 		'format' : 'iframe',
 		'height' : 600,
 		'width' : 160,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/232e9c1b69adf7a734e6278405b2be26/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/5fb4250a8668afd9928b28b1f9666ffb/invoke.js"></script>
 <script type="text/javascript">
 	atOptions = {
-		'key' : 'bf693d886c078381bc1e76964f95d48c',
+		'key' : '93c978e1d215bc2856d6c15002f5768a',
 		'format' : 'iframe',
 		'height' : 90,
 		'width' : 728,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/bf693d886c078381bc1e76964f95d48c/invoke.js"></script><script type="text/javascript">
+<script type="text/javascript" src="//evendisciplineseedlings.com/93c978e1d215bc2856d6c15002f5768a/invoke.js"></script><script type="text/javascript">
 	atOptions = {
-		'key' : '2e86d00a15c69fd9960d647d4d2e1040',
+		'key' : '8c3f4c07f4823b0a09c58bd25bf40e7f',
 		'format' : 'iframe',
 		'height' : 250,
 		'width' : 300,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/2e86d00a15c69fd9960d647d4d2e1040/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/8c3f4c07f4823b0a09c58bd25bf40e7f/invoke.js"></script>
 <script type="text/javascript">
 	atOptions = {
-		'key' : '9fe0136e4b962da5f969b2f2bfba1224',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//scheduleginnarcotic.com/9fe0136e4b962da5f969b2f2bfba1224/invoke.js"></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '060046c5f582b02029184956af4c11a9',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//scheduleginnarcotic.com/060046c5f582b02029184956af4c11a9/invoke.js"></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '2ba0c36c9af8e2c3f20ab27f0a42b201',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//scheduleginnarcotic.com/2ba0c36c9af8e2c3f20ab27f0a42b201/invoke.js"></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '76d83badbc00a7b58a041e25bbca8e3d',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//scheduleginnarcotic.com/76d83badbc00a7b58a041e25bbca8e3d/invoke.js"></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'ac8752679252d0311d6f2f240754ceb7',
+		'key' : '41790db49dd937b4476b9261bfe6c2c3',
 		'format' : 'iframe',
 		'height' : 50,
 		'width' : 320,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//scheduleginnarcotic.com/ac8752679252d0311d6f2f240754ceb7/invoke.js"></script>
-
-
+<script type="text/javascript" src="//scheduleginnarcotic.com/41790db49dd937b4476b9261bfe6c2c3/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '8b3c834ed652ac093d7256450645b41e',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/8b3c834ed652ac093d7256450645b41e/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c4b64b8f7f8d2ddcbd4a8542265c7c98',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/c4b64b8f7f8d2ddcbd4a8542265c7c98/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'fdf01d974a14502985f975dd7f24e731',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/fdf01d974a14502985f975dd7f24e731/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4eb89e36bf3831c955ed7258c4e8f7c5',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/4eb89e36bf3831c955ed7258c4e8f7c5/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'fd91bb4f5f140787a9af421450c422e8',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/fd91bb4f5f140787a9af421450c422e8/invoke.js"></script>
 
 </div></div>
+
 <script type="text/javascript">
    var uid = '342117';
-   var wid = '712879';
+   var wid = '699120';
    var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
    pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
 </script>
+	
 
+	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
 
-	  
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
+
 </body>
 </html>
-
-
 
 
