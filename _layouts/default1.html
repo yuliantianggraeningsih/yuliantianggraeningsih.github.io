@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,11 +158,11 @@
 
     <div class="container pr-0">
 
-    <!-- Begin Logo -->
+    <!-- Begin Logo 
     <a class="navbar-brand" href="{{ site.url }}/">
     <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}"/>
     </a>
-    <!-- End Logo -->
+    End Logo -->
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -188,7 +189,10 @@
 		    <li class="nav-item">
                 <a class="nav-link" href="{{ site.url }}/privacy-policy">Privacy Policy</a>
                 </li>
-
+<li class="nav-item">
+                <a class="nav-link" href="{{ site.url }}/About">About</a>
+                </li>
+		    
 		    <br />
 
                 {% include search-lunr.html %}
@@ -212,8 +216,7 @@
 <!-- Content
 ================================================== -->
 <div class="main-content">
-    {{ content }}
-
+    
 
 <a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
 <div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
@@ -282,7 +285,8 @@
 </script>  
 </div></div></div></span>
 
-	      
+	  {{ content }}
+    
     
 </div>    
 </div>
@@ -290,6 +294,9 @@
 
 	
  
+	
+	
+	
 	
 	
 
@@ -302,10 +309,12 @@
 
     
         <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
+            <span class="col-md-6 col-sm-6 text-center text-lg-left" style="background-color:#fff; color:#000;" >
+               Contact: adabunalima5@gmail.com
+		    <br />
+		    Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
 		
-            </div>
+            </span>
             
         </div>
     </div>
@@ -471,19 +480,22 @@
 
 </div></div>
 
-<script type="text/javascript">
-   var uid = '342117';
-   var wid = '699120';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
+
 	
 
 	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
 
+
+
+<script type="text/javascript">
+   var uid = '342117';
+   var wid = '699120';
+   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
+   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+</script>
+
+	
 </body>
 </html>
-
-
