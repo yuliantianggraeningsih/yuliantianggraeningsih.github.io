@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png"/>
+
+
+{% seo %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.title }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+  "uploadDate": "{{ page.date }}",
+  "duration": "PT55M47S",
+  "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
+}
+</script>
+
+	<!--breadcrumb-->
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "photo",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?photo"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "video",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?video"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "leaked contents",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?leaked"
+		},
+		{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "more collections",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?collection"
+		}
+	]
+}
+</script><!--breadcrumb-->
+	
+	<!-- sitelinks -->
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"url": "{{ site.url }}",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "{{ site.url }}{{ site.baseurl }}/?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script><!-- sitelinks -->
+	
+	
+	<!-- how to -->
+	<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "HowTo",
+	"name": "{{ page.title }}",
+	"description": "{{ page.title }}",
+	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+	"totalTime": "PT57M",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "2"
+	},
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "find download link",
+			"text": "find download link on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "click download button",
+			"text": "click download button on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		}
+	]
+}
+</script><!-- how to -->
+	
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:40px;
+    background-color: #006400;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .header nav {
+    text-align: right;
+  }
+  .header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  .header nav ul li a:hover {
+    color: #ffd700; /* Gold */
+  }
+  .sidebar {
+    position: fixed;
+    top: 60px; /* Height of the header */
+    left: 0;
+    height: calc(100% - 0px); /* Adjusted for the height of the header */
+    width: auto;
+    background-color: #006400;
+    color: #fff;
+    transition: transform 1.9s ease;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .sidebar.hide {
+    transform: translateX(-250px);
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .sidebar li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #555;
+  }
+  .sidebar li:last-child {
+    border-bottom: none;
+  }
+  .sidebar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  .sidebar li a:hover {
+    background-color: #555;
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 12px;
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .content {
+    margin-left: 0px; /* Adjusted for sidebar width and margin */
+    padding: 10px;
+  }
+  h1 {
+    color: #006400;
+  }
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-in-out infinite alternate;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+  h2 {
+    color: #006400;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+<a class="navbar-brand" href="{{ site.url }}/">
+    <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}"/>
+    </a>
+</div>
+</div>
+
+<nav class="sidebar hide" id="sidebar">
+  <ul>
+    <li><a href="#flowering">Flowering Ornamental Plants</a></li>
+    <li><a href="#foliage">Foliage Ornamental Plants</a></li>
+    <li><a href="#hanging">Hanging Ornamental Plants</a></li>
+    <li><a href="#bonsai">Miniature or Bonsai Ornamental Plants</a></li>
+    <li><a href="#aquatic">Aquatic Ornamental Plants</a></li>
+    <li><a href="#toxic">Toxic Ornamental Plants</a></li>
+    <li><a href="#unique">Rare or Unique Ornamental Plants</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <div class="menu-toggle" onclick="toggleSidebar()">☰ Menu</div>
+
+          <div class="site-content">
+
+<div class="container">
+            <div class="main-content">
+      {{ content }}
+      </div>     </div>
+        </div>
+
+
+</div>
+
+<script>
+  function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('show');
+    sidebar.classList.toggle('hide');
+  }
+</script>
+
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+	<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags" >
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		</div>
+	</div>
+</div>
+
+	</div></div></div></span>
+	
+<footer class="footer">
+    <div class="container">
+    
+
+    
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+      <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp; •&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+		    <br />
+		    Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
+		
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="{{ site.url }}/assets/js/mediumish.js"></script>
+
+{% if site.lazyimages == "enabled" %}
+<script src="{{ site.url }}/assets/js/lazyload.js"></script>
+{% endif %}
+
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+{% endif %}
+    
+    
+</body>
+</html>
