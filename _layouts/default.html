@@ -121,7 +121,7 @@
     background-color: #f0f0f0;
   }
   .header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -129,7 +129,7 @@
     background-color: #006400;
     color: #fff;
     padding: 10px 0;
-    z-index: 1000;
+    z-index: 1001;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
 /*  .header .container {
@@ -168,7 +168,7 @@
     color: #ffd700; /* Gold */
   }
   .sidebar {
-    position: fixed;
+    position: absolute;
     top: 60px; /* Height of the header */
     left: -700;
     height: calc(100% - 0px); /* Adjusted for the height of the header */
