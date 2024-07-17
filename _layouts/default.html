@@ -189,11 +189,11 @@
   .sidebar ul {
     list-style-type: none;
     padding: 5px;
-    background-color: #00000050;
   }
   .sidebar li {
     padding: 5px;
     background-color: #00000050;
+    border-radius: 5px;
   }
   .sidebar li:last-child {
     border-bottom: none;
@@ -250,7 +250,9 @@
 </div>
 </div>
 
-<nav class="sidebar hide" id="sidebar"><br /><br/><br />
+<nav class="sidebar hide" id="sidebar"><br />
+{% include search-lunr.html %}
+<br />
   <ul>
     <li><a href="#flowering">Flowering Ornamental Plants</a></li>
     
