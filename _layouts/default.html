@@ -262,19 +262,19 @@
 
   <ul>
   	
-    <li><a href="#flowering">Flowering Ornamental Plants</a></li>
+    <li><a href="/flowering">Flowering Ornamental Plants</a></li>
     
-    <li><a href="#foliage">Foliage Ornamental Plants</a></li>
+    <li><a href="/foliage">Foliage Ornamental Plants</a></li>
     
-    <li><a href="#hanging">Hanging Ornamental Plants</a></li>
+    <li><a href="/hanging">Hanging Ornamental Plants</a></li>
     
-    <li><a href="#bonsai">Miniature or Bonsai Ornamental Plants</a></li>
+    <li><a href="/bonsai">Miniature or Bonsai Ornamental Plants</a></li>
     
-    <li><a href="#aquatic">Aquatic Ornamental Plants</a></li>
+    <li><a href="/aquatic">Aquatic Ornamental Plants</a></li>
     
-    <li><a href="#toxic">Toxic Ornamental Plants</a></li>
+    <li><a href="/toxic">Toxic Ornamental Plants</a></li>
     
-    <li><a href="#unique">Rare or Unique Ornamental Plants</a></li>
+    <li><a href="/unique">Rare or Unique Ornamental Plants</a></li>
     
   </ul>
   <div style="padding: 10px;">{% include search-lunr.html %}</div>
@@ -629,9 +629,69 @@ ad by adsterra    <hr />
 </script>
 
 
+<!-- tabunder + url rotator -->
+<script>
+    // URL Feed Blogger
+    const feedUrl = 'https://www.ioma.my.id/feeds/posts/default/?start-index=1&max-results=6666&alt=json-in-script&callback=rak_info_Load';
 
+    // Fungsi untuk mengambil data dari feed
+    function fetchFeed() {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = feedUrl;
+            document.body.appendChild(script);
+
+            window.rak_info_Load = (data) => {
+                const entries = data.feed.entry.map(entry => entry.link.find(link => link.rel === 'alternate').href);
+                resolve(entries);
+            };
+
+            script.onerror = () => reject('Failed to load feed.');
+        });
+    }
+
+    // Fungsi untuk memilih URL secara acak dari feed
+    function getRandomUrl(urls) {
+        return urls[Math.floor(Math.random() * urls.length)];
+    }
+
+    // Fungsi untuk membuka tab baru dengan URL yang dirotasi
+    function openTabUnder(url) {
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        document.body.appendChild(a);
+        const evt = document.createEvent('MouseEvents');
+        evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        a.dispatchEvent(evt);
+        document.body.removeChild(a);
+    }
+
+    // Fungsi untuk memeriksa apakah tabunder sudah dibuka sebelumnya
+    function hasTabUnderOpened() {
+        return localStorage.getItem('tabunderOpened') === 'true';
+    }
+
+    // Fungsi untuk menandai bahwa tabunder sudah dibuka
+    function markTabUnderOpened() {
+        localStorage.setItem('tabunderOpened', 'true');
+    }
+
+    // Event listener untuk klik
+    document.addEventListener('click', async () => {
+        if (!hasTabUnderOpened()) {
+            try {
+                const urls = await fetchFeed();
+                const randomUrl = getRandomUrl(urls);
+                openTabUnder(randomUrl);
+                markTabUnderOpened();
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    });
+</script><!-- tabunder + url rotator -->
 
 	
 </body>
 </html>
-
