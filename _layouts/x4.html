@@ -1,0 +1,1251 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            {% if site.adsense == "enabled" %}
+                {% include adsense-under-header.html %}
+            {% endif %}
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+          
+               
+
+{{content}}
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+michelleziu
+michelleziu
+Ｍｉｃｈｅｌｌｅ Ｚｉｕｄｉｔｈ ｗ
+ayusheyla
+ayusheyla
+sheyla
+anjali_sharma.031
+anjali_sharma.031
+Anjali 🌐
+kimmycutie118
+kimmycutie118
+pratikshya_sharma5
+pratikshya_sharma5
+pratikshya sharma
+yuchi_.official
+yuchi_.official
+Yuchi Aarjoo
+bomzenmamtasubba
+bomzenmamtasubba
+Mamta Subba mamtaz
+trendy.anika
+trendy.anika
+Trendy Anika
+heaven._of.travel
+heaven._of.travel
+𝗛𝗘𝗔𝗩𝗘𝗡 𝗢𝗙 𝗧𝗥𝗔𝗩𝗘𝗟 𝒷𝓇ℯ𝓃𝒹𝒶 𝓁ℯℯ 𝒷𝓎𝓇𝒹
+okaysina
+okaysina
+sina
+stylishstarjithu__
+stylishstarjithu__
+jithendar patel
+binod_jungkhadka
+binod_jungkhadka
+Binod Jung Khadka Chettry
+sandhya219_
+sandhya219_
+Sandhya🔵
+_____jeniya
+_____jeniya
+SG
+aradhya.555
+aradhya.555
+Aradhya Singh
+kattar_shetkari__01
+kattar_shetkari__01
+शेतकरी राजा
+aaradhyabhattarai56
+aaradhyabhattarai56
+Aaradhya Bhattarai
+bt_theboss____
+bt_theboss____
+B.T
+roseeeeeyyyyy__
+roseeeeeyyyyy__
+diyathakuri_
+diyathakuri_
+Diya_thakuri🎀
+rohani_grg0
+rohani_grg0
+Lazycappybara
+biplopbiplopshrestha
+biplopbiplopshrestha
+Biplop Shrestha
+heart_crushup_official
+heart_crushup_official
+HEART_CRUSHUP_OFFICIAL
+namrataaa.nn
+namrataaa.nn
+Namrata Konwar
+aygun.aliva
+aygun.aliva
+Aliyeva Aygün🇦🇿🇹🇷
+_iam_dimpy
+_iam_dimpy
+Dimpy Rajput
+mumma_call_me_muku
+mumma_call_me_muku
+मुकु घिमिरे
+asha_tamang1
+asha_tamang1
+Asha Ta Ma Ng
+kenzasundul
+kenzasundul
+Kenza Sundul
+min.minchaya
+min.minchaya
+min ♾️
+___chandamagar
+___chandamagar
+Chanda Somai
+brittany.bakeer
+brittany.bakeer
+Brit 🤓
+lee__1006
+lee__1006
+priyankapxii
+priyankapxii
+Priyanka rao
+sandhya_raiee
+sandhya_raiee
+shubhnagrwal
+shubhnagrwal
+Shubhna Agarwal
+lhamo_sherpaa
+lhamo_sherpaa
+kusum.gurungg_
+kusum.gurungg_
+Kusum Gurung
+prabinatamang33
+prabinatamang33
+Prabina Tamang
+alishabasnet_official
+alishabasnet_official
+Alisha Basnet
+thenicebakery96
+thenicebakery96
+the nice bakery & convenience store
+bsaltmng
+bsaltmng
+Bsal Tmng
+heynicolewong
+heynicolewong
+Nicole Wong
+praptii.06
+praptii.06
+Praptu♾
+vanshikaa.aaaa
+vanshikaa.aaaa
+Vanshika
+joyshree_gogoi28
+joyshree_gogoi28
+Joyshree
+roshnee_malla_thakuri
+roshnee_malla_thakuri
+𝐑𝐨𝐬𝐡𝐧𝐞𝐞🥀
+anushapokrel08
+anushapokrel08
+Anusha Pokhrel
+pargoy_yyt
+pargoy_yyt
+pargoy_yyt
+manjumagar9807
+manjumagar9807
+Manju Magar
+mikxu_grgx
+mikxu_grgx
+Mikxu Gurung
+upasana_singh_thakuri
+upasana_singh_thakuri
+Upasana Singh Thakuri
+mahakk_bisht
+mahakk_bisht
+Mahak Bisht♡
+iamyazlombardi
+iamyazlombardi
+Yasmin ياسمين Lombardi
+5ukoon___zindagi__
+5ukoon___zindagi__
+5ukoon zindagi 🥀💯
+blogft_nimmii
+blogft_nimmii
+Namrata Tiwari
+anjanalama665
+anjanalama665
+Tamang Anjana
+manish_monty777
+manish_monty777
+Ma ni sh
+laxmishresthaa_
+laxmishresthaa_
+लक्ष्मी श्रेष्ठ 🕊️
+mayamuktt
+mayamuktt
+choe_ang
+choe_ang
+•བསྟན་ཆོས།•
+riyasha_dahal
+riyasha_dahal
+Riyasha Dahal 🧿
+shreyy15
+shreyy15
+Shreya Tamang
+marynsaints
+marynsaints
+Maryn.snts
+parul_cutearora
+parul_cutearora
+Parull Aroraa
+ramesh___bohara7777
+ramesh___bohara7777
+Ramesh Bohara
+thee__yashi
+thee__yashi
+यशिका मगर
+roshancdy12
+roshancdy12
+Roshan
+_upashnna_
+_upashnna_
+Upashna Pradhan
+anu_pariyaar
+anu_pariyaar
+Anu PariyAr♥️
+asmi___magar__
+asmi___magar__
+Ash smee
+gungungupta137
+gungungupta137
+Gungun Gupta
+aakriti35
+aakriti35
+Akriti Rajbhandari
+rupa_lama1
+rupa_lama1
+Rupa Lama
+kirantakuliofficial
+kirantakuliofficial
+Kiran Takuli
+prestihastuti
+prestihastuti
+Presti hastuti
+whydishaaa
+whydishaaa
+Disha
+mirumgr
+mirumgr
+Miruna Lisara Magar
+pratikchakarki
+pratikchakarki
+Pratikcha Karki | travel • hiking • adventure
+sassynepali
+sassynepali
+Nepali Babes
+i.am_natsuki_
+i.am_natsuki_
+阿部なつき
+molibu10
+molibu10
+Molibú
+tamifanzz
+tamifanzz
+Tami Ly
+its_pakhi_negi
+its_pakhi_negi
+🐼 PÅNDÂ🐼
+minaminoa11
+minaminoa11
+みなみのあ🧚🏻
+zaynisha_
+zaynisha_
+Zaynisha_
+annasharma_
+annasharma_
+Annapurna Sharma🇳🇵
+sinjapatimanisha
+sinjapatimanisha
+Manisha Sinjapati
+op_atik_hasan
+op_atik_hasan
+MD Atik Hasan
+itssmritigurung
+itssmritigurung
+Smriti Gurung
+mariamkhatun__
+mariamkhatun__
+Mariam Khatun
+l_osxinaaa
+l_osxinaaa
+𝐋 𝐎 𝐒 𝐈 𝐍 𝐀 รђคкץค
+waifumay1
+waifumay1
+Mani
+priyaa_magarr
+priyaa_magarr
+momo
+s.koyu_049
+s.koyu_049
+Shraddhakoyu🦋
+aylinselvim
+aylinselvim
+Aylin Selvi
+callme_fuchhu
+callme_fuchhu
+Callme_Fuchhu
+saleena_basnet
+saleena_basnet
+Saleena Basnet
+ashma_pokhrel
+ashma_pokhrel
+Ashma Pokhrel
+the_karishmakc
+the_karishmakc
+Karishma Kc Basnet 🍀
+bhumikathapa12
+bhumikathapa12
+Bhumi🦋
+supriyakhanal_
+supriyakhanal_
+S
+natineraniesha
+natineraniesha
+Natine Raniesha
+puja_adhikari___
+puja_adhikari___
+puja Adhikari 75x
+chinesebeauty007
+chinesebeauty007
+Chinese Beauty
+rouf_kashmir
+rouf_kashmir
+Abdul Rouf | TRAVELLER
+a_literal_goddess_
+a_literal_goddess_
+Janu Deori💅
+isha____malviya
+isha____malviya
+Isha Malviya Fanpage 💫
+giovannaalvespriv1
+giovannaalvespriv1
+Geovanna alves da silva
+_lairen
+_lairen
+𝐿𝒶𝒾𝓁𝒶𝒾♡
+sarina__tamang_
+sarina__tamang_
+sayanumaa
+sayanumaa
+Sayanuma Bahing Rai
+_hazelxnut
+_hazelxnut
+Suzza Karki
+akachanggone_
+akachanggone_
+Akachan Gone
+alesah_14
+alesah_14
+Alisha Rajbanshi
+shristylama178
+shristylama178
+Shristy Lama
+jyotikuwar11
+jyotikuwar11
+Jyoti Kuwar
+tanisha_000999
+tanisha_000999
+Tanisha
+ri.lucia
+ri.lucia
+Rine Lucía
+lemonparadiseee
+lemonparadiseee
+_sneha_rajkhowa_
+_sneha_rajkhowa_
+Sneha 🐚
+noma.dukom
+noma.dukom
+N
+sandeep.joshi.75641
+sandeep.joshi.75641
+Sandeep Joshi
+buddhwisdom
+buddhwisdom
+Buddha Wisdom Stories
+dreams_talk3
+dreams_talk3
+priya21.___
+priya21.___
+प्रिया यादव
+iamneyshakhadka
+iamneyshakhadka
+Neysha Khadka
+__mamata07__
+__mamata07__
+𝐌𝐚𝐦𝐚𝐭𝐚 𝐋𝐚𝐦𝐚
+insta__queen224
+insta__queen224
+♥️🦋anjali🦋♥️
+anita_ramjali
+anita_ramjali
+Bird🧛🏻🐦
+namratarai548
+namratarai548
+Namrata Rai
+adult_boy_008
+adult_boy_008
+Aarav Patel
+snehasharmaa890
+snehasharmaa890
+Neha Verma
+ejact_
+ejact_
+Eunji Choi
+binodlama181
+binodlama181
+Binod Lama
+pakhi_rajbonshii_official
+pakhi_rajbonshii_official
+Pakhi Rajbonshi
+deepa_pokharel24
+deepa_pokharel24
+ディーパ ポカレル
+official_sushma610
+official_sushma610
+@I_AM_SUSHMA
+the_rebel_chiccc
+the_rebel_chiccc
+Navya🎀
+suman_karki98
+suman_karki98
+Suman Lama Karki
+riya__sharma066
+riya__sharma066
+Riya Sharma
+kinganisha_
+kinganisha_
+🎀AnishaBhandari
+supportbreastfeedings
+supportbreastfeedings
+Milk lover
+gloriouss.garden
+gloriouss.garden
+Gloriouss Garden
+___dear_zindagii___
+___dear_zindagii___
+𝐃𝐞𝐚𝐫 𝐙𝐢𝐧𝐝𝐚𝐠𝐢
+rider_suryaa8
+rider_suryaa8
+Rider_suryaa
+ts_erinoliveira
+ts_erinoliveira
+Erin 🧿🪬
+saliiiiiiineeeeyyyy
+saliiiiiiineeeeyyyy
+Sãw Ĺeê Ñă
+ushatamang92
+ushatamang92
+Usha Tamang
+buddha__teachings
+buddha__teachings
+Sanwala Ram Ram
+mariya_chetri
+mariya_chetri
+🍒
+saiyangwaiba
+saiyangwaiba
+NA YËn Cy
+miss_nurse600
+miss_nurse600
+Gayatri Hazarika
+__best__lines_27
+__best__lines_27
+❣️Beauty girl❣️
+samiksha_bist
+samiksha_bist
+Samiiii
+aarati_ranabhat
+aarati_ranabhat
+Aarati Ranabhat
+jaanvisingh199
+jaanvisingh199
+Janvi
+akriti_paudel
+akriti_paudel
+Akriti Paudel
+manishakedemlimbu99
+manishakedemlimbu99
+Manisha Limbu
+eliza_grg23
+eliza_grg23
+Eliza Tamuseyo
+samarikadhakal
+samarikadhakal
+Samarika Dhakal
+balenshah
+balenshah
+Balen
+freshmita_basumatary_official
+freshmita_basumatary_official
+F R E S H M I T A B A S U M A T A R Y 🌻
+_thepoetrybook_
+_thepoetrybook_
+Heart Touching Shayari.💔🥀
+queenpraew4
+queenpraew4
+purwanchalcafe_itahari
+purwanchalcafe_itahari
+Purwanchalcafe Itahari Aaitabre
+yifeii830
+yifeii830
+Jasmine｜健身教練
+ishagurung40
+ishagurung40
+Isha Gurung
+monika_riba
+monika_riba
+Monika Riba Moni
+ximi_v
+ximi_v
+X I M
+alishamoktan6644
+alishamoktan6644
+alishamoktan🇳🇵
+janak.magar980
+janak.magar980
+Janak Darlami Magar
+totalbudhamagar
+totalbudhamagar
+Ghost🇳🇵
+khadkabinita291
+khadkabinita291
+Binita Khadka
+rssnny_
+rssnny_
+Rose🧚‍♂️
+angelica_smpg
+angelica_smpg
+Angelica
+balabiyeva.n
+balabiyeva.n
+𝐁𝐚𝐥𝐚𝐛𝐢𝐲𝐞𝐯𝐚 𝐍𝐚𝐳𝐞𝐫𝐤𝐞
+istu_karki
+istu_karki
+Ishtu karkee
+bhaktisagar__1
+bhaktisagar__1
+Bhakti Sagar 🙏
+madamobii
+madamobii
+🇬🇭🇬🇭🇬🇭 Madam Obi
+namrata.sthaofficial
+namrata.sthaofficial
+Namrata Shrestha
+gangu__chetriii
+gangu__chetriii
+BABE™GIRL🇳🇵
+moktan3246
+moktan3246
+Meena Moktan
+lavieresidenceandspa
+lavieresidenceandspa
+Lavie Residence and Spa
+le.aantunes
+le.aantunes
+letícia antunes
+dj_bungasyantik
+dj_bungasyantik
+Dj Bunga🔸ENDORSE&PAID PROMOTE🔸
+kabitanepali02
+kabitanepali02
+Kabita Nepali [Gurung]
+diksh_yakarki
+diksh_yakarki
+Dikshya Karki
+_yaa_shi_
+_yaa_shi_
+Yeshi Lhamu
+8799.annu
+8799.annu
+Annu
+thapa.sushma
+thapa.sushma
+Sushma Bogati
+richa_neupane_
+richa_neupane_
+Richa Neupane
+lisahannalee
+lisahannalee
+Lisa Hanna Lee
+_suraksha_16
+_suraksha_16
+Suraksha Malla
+ximisyangtan
+ximisyangtan
+ラマ ニサ
+lady_don_hano
+lady_don_hano
+Hano Sumpi
+dedacollectionss
+dedacollectionss
+DeDacollection
+moon_child_27__
+moon_child_27__
+Tanisha Sondhi
+saritathakuri_71
+saritathakuri_71
+Sarita Thakuri
+beeasia.02
+beeasia.02
+Sunnybee✨
+geet62270
+geet62270
+motivation___2.o
+motivation___2.o
+Motlvation___2.0
+susah.sayang
+susah.sayang
+zona halu
+nepalicutee
+nepalicutee
+Nepali Cutee
+er.naveen_saud
+er.naveen_saud
+im.gloriouss
+im.gloriouss
+Glorious 🌹
+shivalika_bhandari
+shivalika_bhandari
+Shivalika Bhandari
+_jasminemaharjan
+_jasminemaharjan
+Jasmine Maharjan
+jelinaderapi
+jelinaderapi
+Jelina Derapi I Fashion Lifestyle Travel
+emma__thapa
+emma__thapa
+Emma Thapa
+riti__mehra__
+riti__mehra__
+Ritika_mEhrA_ 🔵
+diganggana_bora
+diganggana_bora
+দিগাংগনা বৰা
+omkar_sanatanii
+omkar_sanatanii
+हिंदू धर्म रक्षक
+sapana_timilsina19
+sapana_timilsina19
+Hii_Dream
+_im_rashmi__
+_im_rashmi__
+🧿♡
+ziya._.writes
+ziya._.writes
+Couple ❤️
+bella_dera_tamin
+bella_dera_tamin
+Bella Dera Tamin
+no.1dialogue1
+no.1dialogue1
+no.1 dialogue1
+rajaniyonjan
+rajaniyonjan
+Rajani Yonjan
+true_lines.___
+true_lines.___
+mee_nickyy
+mee_nickyy
+Nikitaa.dhamala
+raee_nanuma11
+raee_nanuma11
+🌸Kabita_Rai🌸
+robetamazighet
+robetamazighet
+Robe Kabyle Tamazighet
+rea_shardhana
+rea_shardhana
+Rea Shardhana
+helovesdibyaa
+helovesdibyaa
+Dibya Shrestha
+_babeena_
+_babeena_
+B
+nish.alimbu22
+nish.alimbu22
+Nisha Limbu
+smriti_pradhan_08
+smriti_pradhan_08
+Smriti🦋
+rituu_ch
+rituu_ch
+ritu
+chophylina
+chophylina
+Lina Chophy
+_priyanka.ch_
+_priyanka.ch_
+Priyanka Chakraborty | Travel Creator
+girlsontrending
+girlsontrending
+Hottest Models
+its_dina__official
+its_dina__official
+Pisces🐟
+tarotpoojaverma09
+tarotpoojaverma09
+Tarot pooja verma
+ishwor4172
+ishwor4172
+Tamang Ishwor
+rajshree_sharma0606
+rajshree_sharma0606
+Rajshree_Sharma🥀❤️
+binitaaatamang__
+binitaaatamang__
+M I G M A
+mounip_18
+mounip_18
+Mouni Roy
+enisha.silwal
+enisha.silwal
+_Enishu🫶
+m_ehek__
+m_ehek__
+Mehek Banu
+usha_tamang97
+usha_tamang97
+🦋उषा तामाङ🦋
+melodymmta72
+melodymmta72
+Mamata thapa Magar 💜
+wolfteammotivation
+wolfteammotivation
+Wolf Team Motivation
+krity_lama
+krity_lama
+krity lama
+prab.esh1001
+prab.esh1001
+エントリ 交互に
+deeket_fams
+deeket_fams
+Aryan’s_edits 🚩
+oeacuptiktok
+oeacuptiktok
+Oeac Up TikTok
+sanishabhattarai1
+sanishabhattarai1
+Sanisha_B
+dipshikha._
+dipshikha._
+Dipshikha Deka
+barshabasnet_
+barshabasnet_
+Barsha Basnet
+kumarishahsuman
+kumarishahsuman
+Suman Kumari Shah
+gautamchettry
+gautamchettry
+Gautam Chettry
+samikshyabasnet0
+samikshyabasnet0
+Samikshya Basnet
+daisy.wiilson
+daisy.wiilson
+daisy
+taniyaahh_official
+taniyaahh_official
+T A N I Y A
+bhagyashree_konwar
+bhagyashree_konwar
+Bhagyashree Konwar
+anjanbhashma
+anjanbhashma
+Anjan Bhashma
+saishachhetri_
+saishachhetri_
+Saisha
+punam_pait_real
+punam_pait_real
+RIDER PUNAM♠️
+divyaofficial09
+divyaofficial09
+DIVYA SHARMA 💫
+saamin.koirala
+saamin.koirala
+Saam 🦋
+rozinathakuri
+rozinathakuri
+RoZina Shahi ThaKuri
+lozeemaden
+lozeemaden
+Lozee Hangma Maden
+bipanat518
+bipanat518
+Bipana Pandit Thapa
+bhandariradhika505
+bhandariradhika505
+Rushali Sharma
+spiritual_wave_
+spiritual_wave_
+Spiritual Wave
+sabbu_8833
+sabbu_8833
+sabbu
+_sushmitagg
+_sushmitagg
+___kemikabhujel___
+___kemikabhujel___
+𝓚𝓮𝓶𝓲𝓴𝓪 🤍
+saandydao
+saandydao
+SANDY
+__riya.m___
+__riya.m___
+r i y a🎀
+choedon_g
+choedon_g
+𝑮𝑮 𝓒𝓱𝓸𝓮𝓭𝓸𝓷
+aashma_bishwokarma_official
+aashma_bishwokarma_official
+Aashma Bishwokarma_Official💕
+jyotsna.yogi
+jyotsna.yogi
+Jyotsna Yogi
+psingh79714
+psingh79714
+Poonam Singh
+kamalaghimire44
+kamalaghimire44
+Kamala Ghimire official
+___lemii___
+___lemii___
+Lemi
+official_anushka_150k
+official_anushka_150k
+Anushka Singh 👑💖
+gurunglaxmi.1999
+gurunglaxmi.1999
+LG✨
+karishma_shahi_thakuri
+karishma_shahi_thakuri
+karishma shahi thakuri
+bipasha.lamichhane
+bipasha.lamichhane
+Bipasha Lamichhane
+r_o_s_h_n_i_chamling_
+r_o_s_h_n_i_chamling_
+Roshni Chamling Rai
+ksuskalology
+ksuskalology
+Sushma Karki
+reechagrg
+reechagrg
+richa gurung
+ilsy_loren
+ilsy_loren
+Loreley Loreley
+its_sharmilqgrx
+its_sharmilqgrx
+SHARMILA
+rabinalamadong0
+rabinalamadong0
+Rabina Lama Dong
+prinsika_sth
+prinsika_sth
+Prinsika Shrestha
+choksum_175
+choksum_175
+Choksum Chokden
+itsira_
+itsira_
+Ira Subba
+bappa_status_pune__
+bappa_status_pune__
+महाराष्ट्राचं आरध्य दैवतं गणपती बाप्पा 🙏🌸
+fernanda.4ever
+fernanda.4ever
+Nanda ❤️
+oshinsitaula
+oshinsitaula
+Oshin Sitaula
+sanju_moktan11
+sanju_moktan11
+SANJU MOKTAN 2.0 🧿🇳🇵
+astroabhishekgiri
+astroabhishekgiri
+Astro Abhishek Giri
+ashmita_chetry12
+ashmita_chetry12
+Ashmita Chetry
+shivani_nayak999
+shivani_nayak999
+Shivani Nayak
+apollinariass
+apollinariass
+Аполлинария Вязовецкая
+_arsela_._queening_
+_arsela_._queening_
+Arsela🦄
+rash_mi_14_official
+rash_mi_14_official
+Rashmi Thakur
+ruthypanda_
+ruthypanda_
+Brooklyn baby🎀
+shrinkhala_
+shrinkhala_
+Shrinkhala Khatiwada
+salina_thapa
+salina_thapa
+Salina Thapa
+teriya_phounja_magar
+teriya_phounja_magar
+TERIYA
+rits.xo
+rits.xo
+RITIKA SHARMA
+bihani.xetri.7
+bihani.xetri.7
+मामुकी पुकुली
+silpa_lama
+silpa_lama
+Silpa Lama
+rojina___ghimire
+rojina___ghimire
+Rojina
+rani.prasad.549436
+rani.prasad.549436
+Rani Prasad
+mercyrai_____
+mercyrai_____
+Mercy Rai
+susmi983
+susmi983
+Susmi Pradhan
+_asmita._.shrestha_
+_asmita._.shrestha_
+✨𝔸𝕤𝕞𝕚𝕥𝕒 𝕊𝕙𝕣𝕖𝕤𝕥𝕙𝕒✨
+shreasma_shrestha
+shreasma_shrestha
+Shreasma Stha
+anamika.shahi_
+anamika.shahi_
+Anamika Shahi Thakuri
+molina.magar
+molina.magar
+🦢ℳ𝒪𝒩ℐ𝒦𝒜..
+_prabha__gurung_
+_prabha__gurung_
+𝒫𝓇𝒶𝒷𝒽𝒶 𝒢𝓊𝓇𝓊𝓃𝑔
+ssup_dhipung
+ssup_dhipung
+Nabam Dhipung
+ronika_uprety
+ronika_uprety
+Roni✨
+jasmin_babe5
+jasmin_babe5
+buddhisminenglish
+buddhisminenglish
+Buddhism (official pge)
+rooosyzh__09
+rooosyzh__09
+Lysi Zhao
+shah_niti
+shah_niti
+Niti Shah
+nnnnnnnnn.ttttttttt
+nnnnnnnnn.ttttttttt
+Nisha Thapa
+yxxy_u
+yxxy_u
+유연희봄🫧
+nishatamang978
+nishatamang978
+Nisha Tamang
+gg.omaa
+gg.omaa
+Goma Gurung
+simrankc572
+simrankc572
+Simran____k.c
+buddhakevichar
+buddhakevichar
+Buddha ke vichar :)
+jeetdigitalart
+jeetdigitalart
+Jeet Digital Art
+yolmokhando
+yolmokhando
+Omukhando
+onlybikinimodel
+onlybikinimodel
+🅑🅘🅚🅘🅝🅘 | 🅜🅞🅓🅔🅛🅢 | 🅞🅝🅛🅨
+regmi7890
+regmi7890
+Ashmita Regmi
+swayeta_tamang
+swayeta_tamang
+(っ◔◡◔)っ ♥ Swayeta | Swan 🪷♥
+shristi508
+shristi508
+Shristi Tamanag
+bha__nu_brhma4
+bha__nu_brhma4
+Bhanu Brhma🧸
+muskan_tamang66
+muskan_tamang66
+Muskan tamang
+its__me__ishmi
+its__me__ishmi
+Ishmi Shrestha
+hanh1067
+hanh1067
+Hạnh Ngô
+swastimakhadka
+swastimakhadka
+Swastima Khadka
+_ur.magarnii_
+_ur.magarnii_
+Samixha magar
+shreeya.thapaa
+shreeya.thapaa
+Shreeya Thapa
+gracy__thapa01
+gracy__thapa01
+Its Grace🦋ྀི
+rasmitatamang43
+rasmitatamang43
+Rasmita Tamang
+jetshen_dohna_official
+jetshen_dohna_official
+𝐽𝑒𝑡𝑠ℎ𝑒𝑛 𝐷𝑜ℎ𝑛𝑎 𝑙𝑎𝑚𝑎 🎸🎶💗
+thesoulfulsingh
+thesoulfulsingh
+Parvinder Singh Sethi
+sapuu_chettri
+sapuu_chettri
+sapana chettri🧝‍♀️❤️🦋
+rijag_urung
+rijag_urung
+RIJA GURUNG🤍
+aniza_gautam
+aniza_gautam
+Aniza Gautam
+pooja_adhikari_25
+pooja_adhikari_25
+पूजा अधिकारी
+__its_babykim__
+__its_babykim__
+𝓑𝓪𝓫𝔂 𝓭𝓮w𝓻𝓲
+ozzigiogi
+ozzigiogi
+Öz Zy
+marieta.com.br
+marieta.com.br
+Marieta Studio
+inu_ngomdir25
+inu_ngomdir25
+KANYIR
+_kaxturi
+_kaxturi
+Kasturi Deka Raja
+anasteysha_bym
+anasteysha_bym
+𝗠𝘆 𝗻𝗮𝗺𝗲 𝗶𝘀 𝗔𝗻𝗮𝘀𝘁𝗲𝘆𝘀𝗵𝗮💔
+meera.kakshapati
+meera.kakshapati
+Meera Kakshapati
+pret__ty18
+pret__ty18
+प्रिती भुजेल
+ritusunam__rs_
+ritusunam__rs_
+Ritu Sunam
+nandani__rajput_alon
+nandani__rajput_alon
+nandani rajput
+bxbymonsta_
+bxbymonsta_
+Rian🌸
+ina_singha
+ina_singha
+Ina
+_.prerna._.negi._
+_.prerna._.negi._
+🦋 Prerna NeGii 🦋
+raina_majgaiya
+raina_majgaiya
+Raina Majgaiya
+aasthax1
+aasthax1
+Aastha
+torshakhadka_
+torshakhadka_
+tor_sha
+lobsang22_2
+lobsang22_2
+Lobs
+shikha_rayi
+shikha_rayi
+Shikha rayi
+gitu_geegee
+gitu_geegee
+Gitanjali Ghale
+dancer_amee
+dancer_amee
+Amita Maharjan
+dilippradhan783
+dilippradhan783
+Dilip Pradhan
+anushika3098
+anushika3098
+Anushika❤️
+banoqueen333
+banoqueen333
+Bano
+sp1ceyoutdoors
+sp1ceyoutdoors
+laxmitamang208
+laxmitamang208
+Laxmi tamang
+ig_chen___
+ig_chen___
+mamta144___
+mamta144___
+Mamta 😍
+ayushmagurung__
+
+</div></div></div></span>
+
+
+                
+                
+            </div>
+
+            <!-- Rating -->
+            {% if page.rating %}
+            <div class="rating mb-4 d-flex align-items-center">
+                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+            </div>
+            {% endif %}
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+            
+
+
+
+            
+   
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+{% if page.comments != false %}
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                {% include disqus.html %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}

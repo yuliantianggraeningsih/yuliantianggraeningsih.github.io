@@ -1,0 +1,1268 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            {% if site.adsense == "enabled" %}
+                {% include adsense-under-header.html %}
+            {% endif %}
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+          
+               
+
+{{content}}
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+aaliyacooll
+𝖠𝖠𝖫𝖨𝖸𝖠 𝖢𝖮𝖮𝖫
+jacqui.comm
+jacqui.comm
+jacqui
+arleni_tuz
+arleni_tuz
+Geysi
+marbe.beltranb
+marbe.beltranb
+Marbella Beltran
+i_em_serena
+i_em_serena
+Serena Baby
+ccokaramle
+ccokaramle
+cc ok aramle
+cf.tatianakaer
+cf.tatianakaer
+Tatianakaer☘️
+arialybra
+arialybra
+ArIA
+sisygarcia4
+sisygarcia4
+Sisy Guzmán
+daileny.garcia
+daileny.garcia
+Daileny Garcia
+maria.one
+maria.one
+yovanamejia75
+yovanamejia75
+🤍yovana🤍;)
+angelina_vladis
+angelina_vladis
+Ангелина Гаранина
+luna_chainz_
+luna_chainz_
+Luna Chainz
+a_gelias
+a_gelias
+Amira G. Elias
+milena_selimova_
+milena_selimova_
+Milena Selimova
+zu.clemente
+zu.clemente
+Zu Clemente
+officedistractions
+officedistractions
+Office Distractions
+aimona_lise
+aimona_lise
+AiMona Lise
+jeimy__vm
+jeimy__vm
+Jeimy Valiente
+dayenzuniga
+dayenzuniga
+dayana 🐅
+carmen.lopez_19
+carmen.lopez_19
+Carmen López
+darlin_spb_
+darlin_spb_
+Darina Smychkova
+dafnnejm
+dafnnejm
+Dafnne Jiménez
+vikelsik
+vikelsik
+𝐕𝐢𝐜𝐭𝐨𝐫𝐢𝐚
+july.hernandezzz
+july.hernandezzz
+♡ 𝓙𝓾𝓵𝔂 𝓗𝓮𝓻𝓷𝓪𝓷𝓭𝓮𝔃 ♡
+laneksa7
+laneksa7
+Svetlana Alekseeva
+esmeralda.storys
+esmeralda.storys
+Esmeralda rivera
+tiki_sweetheart_97
+tiki_sweetheart_97
+Teresa Noguera
+kerolay_chaves
+kerolay_chaves
+Kerolay Chaves
+miaflores.26
+miaflores.26
+Mia Flores💜👑
+makshaeva_aa
+makshaeva_aa
+Анастасия Макшаева
+abne_vallee
+abne_vallee
+Abne_valle
+summerhayes123
+summerhayes123
+Summer Hayes
+paolitagomezaleman
+paolitagomezaleman
+Paola Gomez Aleman
+daniela_g_m18
+daniela_g_m18
+Daniela Garcia
+karen2.8
+karen2.8
+Karen Palma Martinez
+aylinselvim
+aylinselvim
+Aylin Selvi
+dream_aliceshaw
+dream_aliceshaw
+Alice Shaw
+elizabethgonzalezgt27
+elizabethgonzalezgt27
+Elizabeth González
+mmmbae.c
+mmmbae.c
+Cynthia Ayala
+ismara_sm
+ismara_sm
+Ismara Salmerón
+perla.najera.313
+perla.najera.313
+Perla🩵
+keren_juli29
+keren_juli29
+Keren Muñoz
+zamygaibor
+zamygaibor
+Zamy Gaibor
+russian_lenateacher
+russian_lenateacher
+LENA RUSSIAN LANGUAGE TEACHER
+emmy.steuer
+emmy.steuer
+Emmy Steuer
+rosa_belle_ig
+rosa_belle_ig
+Rosa Belle
+soymarely2
+soymarely2
+Marely Ramirez
+diani7099
+diani7099
+Diani Reyes
+raisr.sanchi
+raisr.sanchi
+Sanchi Rai
+lolis_vences
+lolis_vences
+Alondra 🍓
+pixelqueensai
+pixelqueensai
+Arisa Santos
+ms_jacklyn
+ms_jacklyn
+Jacqueline Neubauer
+mercedesblanche1299
+mercedesblanche1299
+Mercedes Blanche
+gomez.yuli_99
+gomez.yuli_99
+yuli♡♡
+joya_eleny_
+joya_eleny_
+JOYA MELENDEZ
+russianromanova
+russianromanova
+BUSINESS RUSSIAN & BASIC RUSSIAN language|👩🏼‍🏫Anastasia Romanova
+sofiasnowhite01
+sofiasnowhite01
+Sofia Snowhite
+stella_garciaai
+stella_garciaai
+Stella Garcia| Virtual Soul
+chainis000
+chainis000
+Hanna Maria
+bellarodriguez_96
+bellarodriguez_96
+Isabella Rodriguez
+brandygontherocks
+brandygontherocks
+Brandy G
+valeriano___18
+valeriano___18
+guadalupejusto34
+guadalupejusto34
+Lupe_jt 👑
+juliethf.07
+juliethf.07
+Julieth funez
+soy_karlita_osita12
+soy_karlita_osita12
+Meli Reyes
+karencarvajal38
+karencarvajal38
+Karen Carvajal
+yamilethrivera636
+yamilethrivera636
+Yamileth Rivera
+c_a_r_i_t_h_o_
+c_a_r_i_t_h_o_
+Caritho Hernández
+elizabetb1997
+elizabetb1997
+Eli Mendez
+vividartistry2023
+vividartistry2023
+Vivid Artistry
+bryanita_lamasviraal
+bryanita_lamasviraal
+Bryanita🩷
+joellgperry
+joellgperry
+JoEll
+ameliany6703
+ameliany6703
+amelia ny
+karolyusettyaf
+karolyusettyaf
+Karol Alvarado
+sandwichcutiecat
+sandwichcutiecat
+Catarina
+classicrussiangirl
+classicrussiangirl
+Rita Safonova from Russia 🇷🇺
+_a.ngelima
+_a.ngelima
+Angelina
+hasnalovely_33
+hasnalovely_33
+Itx Jani
+lettydjm
+lettydjm
+Leticia Moscoso
+valentina_ssr0
+valentina_ssr0
+Valentina Rodriguez
+fanyypalacios_tv
+fanyypalacios_tv
+Fany Palacios
+emma.wagner16
+emma.wagner16
+Emma Wagner
+yany01___
+yany01___
+Turcios💛
+manuela_salinas73
+manuela_salinas73
+𝓜𝓪𝓷𝓾𝓮𝓵𝓪 𝓢𝓪𝓵𝓲𝓷𝓪𝓼🦋
+isabella_sterling_
+isabella_sterling_
+Isabella
+lilyhayes2001
+lilyhayes2001
+Lily Hayes
+cinthianeyraoficial
+cinthianeyraoficial
+Cinthia De La Cruz Neyra
+loverllyc
+loverllyc
+LOVERLLY CHANEL NUÑEZ PEREZ
+_shubhi.__
+_shubhi.__
+Maitreyee Tiwari
+asiridh_la_oficialptm
+asiridh_la_oficialptm
+𝑨𝒔𝒊𝒓𝒊𝒅𝒉 𝒄𝒊𝒏𝒅𝒚❤️
+bilykkateryna
+bilykkateryna
+Kateryna Bilyk
+itsmezoe.ig
+itsmezoe.ig
+Zoe
+diana2409.16
+diana2409.16
+Dîana Marcela
+jas_jasminka_
+jas_jasminka_
+kenniamondragon_
+kenniamondragon_
+kennia mondragon🇭🇳
+evasavagiou
+evasavagiou
+Eva Savagiou
+alisson_mejia01
+alisson_mejia01
+Alisson Mejia
+alepizsicily
+alepizsicily
+Alessia Pizzuto
+_paola_velazquez_
+_paola_velazquez_
+Paola Velazquez
+ukraina.love1
+ukraina.love1
+Ukraina-Love.com
+brittany__444
+brittany__444
+𝓟𝓸𝓵𝓪𝓷𝓬𝓸
+ingrid18p
+ingrid18p
+𝔦𝔫𝔤𝔯𝔦𝔡 𝔭𝔢́𝔯𝔢𝔷
+yekaiwei34
+yekaiwei34
+Ye Kaiwei 🦀
+alexad28
+alexad28
+Alexa Calderon
+joellperry
+joellperry
+JoEll Perry
+ana_lara1904
+ana_lara1904
+A'na Laraa
+astrid_juarez_j
+astrid_juarez_j
+Michelle Juarez
+millasofiafin
+millasofiafin
+Milla Sofia
+virgy2226
+virgy2226
+𝚅𝙸𝚁𝙶𝙸𝙽𝙸𝙰 𝚅𝙰𝚁𝙴𝙻𝙰🧿
+milagrofloresoficial
+milagrofloresoficial
+Milagro Flores oficial
+shweta.tiwari
+shweta.tiwari
+Shweta Tiwari
+dr.vera.perio
+dr.vera.perio
+Dr. Vera Telyakova
+carmencita_4k
+carmencita_4k
+~𝒀𝑬𝑺𝑳𝒀 𝑴.𝑪𝑯𝑨𝑽𝑨𝑹𝑹𝑰𝑨!❤️‍🔥
+lupita.lmb
+lupita.lmb
+Lupita Lmb
+serenaofficial12
+serenaofficial12
+Serena Official
+lexischmidtai
+lexischmidtai
+Lexi Schmidt
+im.fabii_19
+im.fabii_19
+Fabi💗
+camila_nicol2003
+camila_nicol2003
+Nicol Torres
+itsgracecharis
+itsgracecharis
+Grace Charis
+karinadiaz352
+karinadiaz352
+Karina Diaz Martinez
+yuliana_rodriguez_fer
+yuliana_rodriguez_fer
+Yuliana Rodríguez Fernandez
+marieofficecrush
+marieofficecrush
+Office Crush 🩷
+garci4_14
+garci4_14
+Nathy 🤍
+martineznayeli910
+martineznayeli910
+Martínez Nayeli
+minty.fy
+minty.fy
+Jessica Farley
+saricel_centeno
+saricel_centeno
+⚜️𝐒𝐚𝐫𝐢𝐜𝐞𝐥 𝐂𝐞𝐧𝐭𝐞𝐧𝐨⚜️
+karenvarela07
+karenvarela07
+Karen Villalobos
+mabel_o.0
+mabel_o.0
+Mabel Alonzo 🙃
+valentinatri1
+valentinatri1
+Valentina Triviño 💞
+_evelyn.monjaraz
+_evelyn.monjaraz
+Evelyn Monjaraz
+ingridhernandez563
+ingridhernandez563
+Ingrid Hernández
+yaleny_abigail
+yaleny_abigail
+𝑨𝒃𝒊𝒈𝒂𝒊𝒍 𝑩𝒐𝒏𝒊𝒍𝒍𝒂👸
+farmgirl.hannah
+farmgirl.hannah
+Hannah Landwirte
+suanyrivera1007
+suanyrivera1007
+Rivera Suany
+kathflores27
+kathflores27
+𝙆𝙖𝙩𝙝𝙚𝙧𝙞𝙣 𝙁𝙡𝙤𝙧𝙚𝙨🪬
+xmey_g
+xmey_g
+Meibelynn 🦋
+tyrastunner
+tyrastunner
+Tyra Stunner
+_xsandraa._37
+_xsandraa._37
+🦋𝓢𝓪𝓷𝓭𝔂_🦋
+cami_nico26
+cami_nico26
+Mi Cami
+ashly_shiguango
+ashly_shiguango
+Ashly
+iraniav21
+iraniav21
+amaya_emma1
+amaya_emma1
+Amaya Emma
+alejandramorales.hn
+alejandramorales.hn
+Alejandra Morales
+yaky_chacon
+yaky_chacon
+Yakelin Chacon
+efrielnych
+efrielnych
+Emily Dupree
+brzlpalma35
+brzlpalma35
+Vanesita🧸
+ana_d_armas
+ana_d_armas
+A N A D E A R M A S
+lupita.prz.79
+lupita.prz.79
+Lupita
+amanda.millerg98
+amanda.millerg98
+Amanda Miller | Art | Fashion
+elizabet.mendez1
+elizabet.mendez1
+elizabet hermosa
+camila_garciaa_1
+camila_garciaa_1
+Camila Garcia
+tatianaluna_11
+tatianaluna_11
+Tatiana
+emilyaadriana
+emilyaadriana
+Adriana Ramirez❤️
+loany_g16
+loany_g16
+Loany Gómez
+andrea_nicolle04
+andrea_nicolle04
+Nicolle Armijo
+_kimberly_c16
+_kimberly_c16
+Kimberly _Cordón🧚‍♀️
+la_loca_210
+la_loca_210
+Miriam Espinoza
+rekhapravinchandra
+rekhapravinchandra
+Rekha Pravinchandra
+evelyn.bianchi04
+evelyn.bianchi04
+Evelyn Bianchi
+karenmart__
+karenmart__
+Karen Mart 👑
+soy_yurisitaa
+soy_yurisitaa
+Yuri Reyes
+annamaes2000
+annamaes2000
+Anna Maes
+karlafiallos.s
+karlafiallos.s
+🪬𝓚𝓪𝓻𝓵𝓪 𝓕𝓲𝓪𝓵𝓵𝓸𝓼💎
+mangogirl11111
+mangogirl11111
+Mangogirl Michelle Athena
+313_akari_
+313_akari_
+𝐀𝐤𝐚𝐫𝐢 /フリーモデル / ブライダルモデル
+rachelbaelin
+rachelbaelin
+Rachel Kaelin
+almariamxx
+almariamxx
+almariamx
+beautyandbrainswithatwist
+beautyandbrainswithatwist
+Rachel Pizzolato
+rach.summers_
+rach.summers_
+Rachel Summers
+jazmine_502
+jazmine_502
+Jazz🌷
+ye_kaiwei2
+ye_kaiwei2
+JJ XU
+thequeenshan
+thequeenshan
+Shania 👑
+kfravg07
+kfravg07
+KFrancell Velásquez
+rebecar07_
+rebecar07_
+Rebeca Rodríguez 🩷
+jessyavila09
+jessyavila09
+🤎🪐☕️
+sofia.corrales100
+sofia.corrales100
+Sofia Corrales
+estef_rubio
+estef_rubio
+Estefany Rubio
+mariza19_huaman
+mariza19_huaman
+Maritza Duran
+mrs.good.lucky
+mrs.good.lucky
+Mrs. Good Luck
+kattieemn
+kattieemn
+Kay ;)
+carolinaalemann_
+carolinaalemann_
+Carolina Alemán
+_beatriiz_lemus
+_beatriiz_lemus
+Beatriz Lemus
+fatimawales
+fatimawales
+Fatimaelizabethwaleswindsor
+perl_gl
+perl_gl
+Perla Lopez
+variniaromerohn
+variniaromerohn
+Varinia Romero
+sofigaleas
+sofigaleas
+Sofia Galeas
+jennimfunes
+jennimfunes
+Jennifer Funes
+kimshantal
+kimshantal
+Kim Shantal 🌹
+ziyaver_89
+ziyaver_89
+ZiyaZehraVeronica🌹
+clstvarela
+clstvarela
+Celeste Varela
+itsn_essy
+itsn_essy
+Nessy Funez
+geissel_gamez
+geissel_gamez
+Geissel Orellana
+nicol_amaodor_
+nicol_amaodor_
+Nicol Amador
+itzelquintana62
+itzelquintana62
+Anahí Quintana
+breybrey_17
+breybrey_17
+Brey
+arianasantorini
+arianasantorini
+ARIANA SANTORINI
+vivianag_1
+vivianag_1
+𝒱𝒾𝓋𝒾𝒶𝓃𝒶🦋
+_ferxujur
+_ferxujur
+Fåbîī Xüjûr
+rocio_zequera
+rocio_zequera
+Rocio Zequera✨
+miagraceharrison
+miagraceharrison
+Mia Grace Harrison
+dariela.amaya
+dariela.amaya
+Dariela Amaya🎀
+ela_zelaya12
+ela_zelaya12
+Ela Zelaya🇭🇳
+alexisivyedge
+alexisivyedge
+Alexis Ivyedge 🌟
+ericka.salgado_
+ericka.salgado_
+Ericka Salgado
+lizriveraa9
+lizriveraa9
+Lizbeth Rivera
+gisscarias
+gisscarias
+Giselle Carias Fashion & Fitness
+aylin_rys
+aylin_rys
+Aylin Reyes
+imouniroy
+imouniroy
+mon
+cynthiasandoval8710
+cynthiasandoval8710
+Cynthia Sandoval
+21.mmsa
+21.mmsa
+𝓛𝓪𝓒𝓱𝓸𝓵𝓪'🌸
+elliavrram
+elliavrram
+Elli AvrRam
+a_liiz_
+a_liiz_
+Elii⚡
+gaby_gomezsv
+gaby_gomezsv
+𝒢𝒶𝒷𝓎
+eva_lightstone
+eva_lightstone
+Eva Lightstone • Model • Fashion
+marymanares
+marymanares
+𝑉𝑖𝑐𝑡𝑜𝑟𝑖𝑎
+koritza_17
+koritza_17
+Kori🍒🇭🇳
+alejandra_rubio_hn
+alejandra_rubio_hn
+Alejandra Rubio
+laraahf7
+laraahf7
+Lara
+cristel7031
+cristel7031
+Cristel Hernández
+olgaboyko_photo
+olgaboyko_photo
+Olga Boyko
+kalia_mora
+kalia_mora
+Kalia Mora
+deannaritter98
+deannaritter98
+Deanna Ritter
+gabrielagaleas
+gabrielagaleas
+Gabriela Galeas
+auroraa_melendez
+auroraa_melendez
+Joya✨❤️
+senayda_mar19
+senayda_mar19
+Senayda Martinez
+delmi.guerra_15
+delmi.guerra_15
+Melissa Guerra
+yessicapaguada99
+yessicapaguada99
+Yessica Paguada
+dishapatani
+dishapatani
+disha patani (paatni) 🦋
+aly_cruz1
+aly_cruz1
+Aly Cruz
+tercero.fabii
+tercero.fabii
+FABIOLA
+martinaa.orlando
+martinaa.orlando
+Martina Orlando
+katherin.aguilar_
+katherin.aguilar_
+Gisell
+marilyn_oreilly23
+marilyn_oreilly23
+Marilyn Oreilly
+_yenifer_wentz
+_yenifer_wentz
+Yenifer Belén🥥
+yarixapaztercero
+yarixapaztercero
+Yarixa Paz Tercero
+elizabeth_fajardo2
+elizabeth_fajardo2
+Elizabeth Fajardo
+mancia.vale
+mancia.vale
+Vale Mancia
+hernandez_fer24
+hernandez_fer24
+Fernanda Hernández
+saraherikson_
+saraherikson_
+Sarah
+emilyobandora
+emilyobandora
+EMILY OBANDO
+jenniferquezadaoficialhn
+jenniferquezadaoficialhn
+Jennifer Quezada
+milagrofloresofficial
+milagrofloresofficial
+Clud de Fans Milagro Flores 🥰✨
+kgabrielalopez
+kgabrielalopez
+Gabriela López
+salazar_.2002
+salazar_.2002
+Fátima Salazar
+melanyespinozaa_
+melanyespinozaa_
+Melany Espinoza
+cynthia.harris09
+cynthia.harris09
+Cynthia Harris
+jpaolasv12
+jpaolasv12
+Jennifer Flores
+juliana_may05
+juliana_may05
+Juliana May
+odybella_
+odybella_
+La Odybella🍒
+jey._.00
+jey._.00
+Jeymy🍒
+santos2004_15
+santos2004_15
+Alejandra Avila Santos
+aly_mhr
+aly_mhr
+🅼🅰🆂🆂🅸🅴🅻💋
+__isamara_rivas_
+__isamara_rivas_
+Isamar Quiroz
+oficial_julissa
+oficial_julissa
+JULISSA💗
+12_cerecita
+12_cerecita
+Yessli🍒
+alslanza
+alslanza
+Ali Lanza
+erika_botero_
+erika_botero_
+Erika Botero
+katherine_ns
+katherine_ns
+𝑲𝒂𝒕𝒉 🥀
+karolina_protsenko
+karolina_protsenko
+Karolina Protsenko
+karlita.mirandaa
+karlita.mirandaa
+✨Karlita.Miranda✨
+michell_2_0_0_5
+michell_2_0_0_5
+Michelle López
+_.fernandaa._4
+_.fernandaa._4
+Fernanda Pacheco
+maggygarcia29
+maggygarcia29
+Maggy Garcia
+garcia_____888
+garcia_____888
+💆🏽‍♀️
+lissth_.mz
+lissth_.mz
+𝑳𝒊𝒔𝒔
+paocruzherrera
+paocruzherrera
+Pao
+martinarossibackup
+martinarossibackup
+Martina Rossi
+silva_florina
+silva_florina
+Florina Silva
+misslena_0
+misslena_0
+Lena💛
+moreveradijkmans
+moreveradijkmans
+Vera
+yojanita.mendez.3
+yojanita.mendez.3
+Somer Méndez
+cesi._.urbina
+cesi._.urbina
+Cesi Urbina
+nallelyshernandez
+nallelyshernandez
+Nayo🐣
+its_evelyn_lg
+its_evelyn_lg
+Evelyn Lara
+escobar__lily
+escobar__lily
+Liliana Escobar
+aimodelinsta
+aimodelinsta
+Lea Persson • Model • Swedish • Influencer • Entrepreneur
+jhoakinagarcia
+jhoakinagarcia
+Nayely Ely DE Garcia
+akaisha.official
+akaisha.official
+Akaisha Vats
+eliza_argueta96
+eliza_argueta96
+Elizabeth Argueta
+osiris_valladares
+osiris_valladares
+Osiris Ruiz🍒
+emilyanderson.ai
+emilyanderson.ai
+Emily Anderson
+iam__maritza__4
+iam__maritza__4
+Soraya Vasquez🩷
+dyorgelys_peralta
+dyorgelys_peralta
+Yorgelys Peralta
+ritzitagonzales
+ritzitagonzales
+Iveth Gonzalez
+_10_reth
+_10_reth
+🦋𝒜𝓁𝑒
+rosibel_rivass
+rosibel_rivass
+Rosi ✨
+alemartinez.com9
+alemartinez.com9
+Alejandra Martínez
+katthy_.11
+katthy_.11
+Katherine🤍
+nina_abraggio
+nina_abraggio
+Valentina Abraggio
+s_patricia_torrez
+s_patricia_torrez
+✨Patty❤️
+china._.mat4
+china._.mat4
+Nayeli Matha 🫐
+_ruiz.2418
+_ruiz.2418
+Noelia Ruiz
+alissa.aag
+alissa.aag
+Alissa
+estefanygarcia_503
+estefanygarcia_503
+🍧🏝Estefany🏝🍧
+marceladiaz09
+marceladiaz09
+💎M A R C E ᭄✿
+jess.icaweaver2007
+jess.icaweaver2007
+Weaver jessica
+mayitahola
+mayitahola
+Anahi espiniza
+lissmejiaaaaa_
+lissmejiaaaaa_
+Liss H Mejía
+nireyes19
+nireyes19
+ReyNico✨
+ruiyi.chn
+ruiyi.chn
+Ruiyi 🇨🇳🇯🇵
+tania_chavezgallardo
+tania_chavezgallardo
+Tania Chavez
+alii_torres477
+alii_torres477
+Alisia Torres
+pereira_lizz_
+pereira_lizz_
+Liz Pereira
+wendii_yanz.27
+wendii_yanz.27
+Wendii 💜
+arleth_zzeab
+arleth_zzeab
+Arleth Zeáb
+mishel_hernandez_20
+mishel_hernandez_20
+Mishel Argueta
+yesli_peraza
+yesli_peraza
+Y-A-N-E-T-H 🤍🌙
+dalia__duarte
+dalia__duarte
+Dalia Sandoval
+belinda_aroca
+belinda_aroca
+Belinda Aroca
+dayanasevilla_
+dayanasevilla_
+Estephanie
+gabyrodri_02_
+gabyrodri_02_
+Gabriela Rodríguez
+alisson_ceron11
+alisson_ceron11
+𝕬𝖑𝖎𝖘𝖘𝖔𝖓🩸
+bea_martine2
+bea_martine2
+Danielita Martínez
+salma_flores23
+salma_flores23
+Salma flores
+ariii_mejia23
+ariii_mejia23
+Ariela Mejia
+jimena.cortez_
+jimena.cortez_
+Jimena
+jennifervasquez_
+jennifervasquez_
+Jennifer Vasquez
+03star.r
+03star.r
+Star💀
+aina_lorence
+aina_lorence
+Aina
+escorciarachel
+escorciarachel
+Reachell Escorcia
+bacmarjorie14
+bacmarjorie14
+Marjorie Baca
+jaslin_cardona_777
+jaslin_cardona_777
+𝐉 𝐀 𝐒 𝐋 𝐈 𝐍 👑𝐂 𝐀 𝐑 𝐃 𝐎 𝐍 𝐀.
+eva_barrientoss
+eva_barrientoss
+Eva Barrientos
+_keycastillooficial_
+_keycastillooficial_
+🍒Key Castillo🍒
+ritzyjimenez_17
+ritzyjimenez_17
+𝐑𝐢𝐭𝐳𝐲𝐉𝐢𝐦𝐞𝐧𝐞𝐳
+mzuniga_97
+mzuniga_97
+Maria Zuniga
+iamjenirivas
+iamjenirivas
+Jenifer Rivas
+floresnicolle15
+floresnicolle15
+Nicolle Flores
+anavilleda94
+anavilleda94
+Ana Villeda
+jenny_mary1939
+jenny_mary1939
+danice_24
+danice_24
+Daniela Cerrato
+elenita_c9946
+elenita_c9946
+Elenita☆
+ramirez.jsj
+ramirez.jsj
+Ramirez Monserrat
+alicedixson
+alicedixson
+Alice Dixson
+paola____lopez
+paola____lopez
+Francis López
+christina_lionscat
+christina_lionscat
+Christina LionsCat 🐱
+carolinareyes_cr22
+carolinareyes_cr22
+🖤Dios mi único amor verdadero💙
+reyes__nicole
+reyes__nicole
+Nicole Reyes
+sarai_pineda22
+sarai_pineda22
+Sarita Pineda
+sara_hqz30
+sara_hqz30
+Sara Yamileth
+iam_serlina
+iam_serlina
+Serlina
+yeimymerlos_007
+yeimymerlos_007
+Yeimy Merlos
+lorenmercadaloficial
+lorenmercadaloficial
+Loren Mercadal
+majochacon1
+majochacon1
+maría josé chacón🦋
+sca_johamy
+sca_johamy
+Scarlett Johamy
+la_xocolatita_12
+la_xocolatita_12
+•Yaribeth Gonzalez🇵🇦🌺
+tiana_cc_
+tiana_cc_
+𝑽𝒆𝒓𝒐́𝒏𝒊𝒄𝒂 🧉
+katherine.campos_
+katherine.campos_
+𝐤𝐚𝐭𝐡𝐞𝐫𝐢𝐧𝐞 𝐜𝐚𝐦𝐩𝐨𝐬
+gaby.nicol.flores
+gaby.nicol.flores
+Gabriela Flores
+stefany_orellana_504
+stefany_orellana_504
+💖✨stefany✨💖
+rubysantos56
+rubysantos56
+Ruby Santos
+carol_sillva._
+carol_sillva._
+Caroline
+fabiolita_lemuss
+fabiolita_lemuss
+🤍F7♛🐯
+cristalbella_official
+cristalbella_official
+Cristal
+loyda_504_
+loyda_504_
+Loyda López
+_amanda_l3
+_amanda_l3
+Amanda Berenice
+w.graciela.guillen
+w.graciela.guillen
+W Graciela Guillen
+vanetsuki_hernandez
+vanetsuki_hernandez
+vanesssa hernandez
+juli17374
+juli17374
+Wendii Rodriguez
+amira_in_la
+amira_in_la
+Amira Abadi ✨
+ivonneturcios
+ivonneturcios
+Ivonne Turcios
+silvia_molina._
+silvia_molina._
+𝕊𝕚𝕝𝕧𝕚𝕒 🤍
+steff_amayahn
+steff_amayahn
+Kelia A Amaya
+dovenoffe
+dovenoffe
+dove noffe 🇧🇪
+daniela_pinto_89
+daniela_pinto_89
+Daniela Pinto
+rip_nini
+rip_nini
+Nicoll ꩜
+g.c.f_elizabeth
+g.c.f_elizabeth
+Elizabeth 🌺
+nefelwilson
+nefelwilson
+Nefel ☘️
+polina_tsarenkova
+polina_tsarenkova
+Polina Tsarenkova
+sophiet3946
+sophiet3946
+justSophie
+maryli_chavez
+maryli_chavez
+Marily chavez🍒
+selerodriguez65
+selerodriguez65
+SelenaRodriguez
+guzman_marig
+guzman_marig
+𝒢𝓊𝓏𝓂𝓈𝓃 𝓂𝒶𝓇𝒾𝑔🍒
+monrroy_sindy
+monrroy_sindy
+Sindy
+danni_osejo07
+danni_osejo07
+Dannilma Osejo
+fanny_var31
+fanny_var31
+🍒Fanny Menjívar🍒
+
+
+</div></div></div></span>
+
+                
+                
+            </div>
+
+            <!-- Rating -->
+            {% if page.rating %}
+            <div class="rating mb-4 d-flex align-items-center">
+                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+            </div>
+            {% endif %}
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+            
+
+
+
+            
+   
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+{% if page.comments != false %}
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                {% include disqus.html %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}
+
