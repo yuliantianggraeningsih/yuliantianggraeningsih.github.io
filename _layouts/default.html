@@ -8,6 +8,7 @@
 <meta name="msvalidate.01" content="D6151F5DC8690B73D0BF930E3F286554" />
 <meta name="yandex-verification" content="81541d3e367b626f" />	
 
+	
 {% seo %}
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
@@ -127,7 +128,7 @@
     left: 0;
     width: 100%;
     height:60px;
-    background-color: #006400;
+    background-color: #b80f0a;
     color: #fff;
     padding: 10px 0;
     z-index: 1010;
@@ -175,7 +176,7 @@
     left: -700;
     height: 100%; /* Adjusted for the height of the header */
     width: auto;
-    background-color: #006400;
+    background-color: #b80f0a;
     color: #fff;
     transition: transform 0.1s ease;
     overflow: auto;
@@ -230,7 +231,7 @@
     100% { opacity: 1; }
   }
   h2, h3, h4 {
-    color: #006400;
+    color: #b80f0a;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -246,6 +247,27 @@
 </head>
 <body>
 
+	<br /><br /><br />
+	<div class="col-12 mb-4">
+      <b> Featurer Posts </b>
+		<hr />
+        <div class="row">
+          {% for post in site.categories.flowering limit: 999 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+           </a>
+              <div class="card-body">
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+	
 <div class="header">
   <div class="container"><b>
 <a href="/" style="font-size: 24px; color:#fff;" >
@@ -630,7 +652,7 @@ ad by adsterra    <hr />
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #006400;
+      background-color: #b80f0a;
       color: #ffffff;
       padding: 10px;
       border-radius: 40%;
@@ -644,7 +666,7 @@ ad by adsterra    <hr />
     }
 
     .back-to-top:hover {
-      background-color: #d14000;
+      background-color: #b80f0a;
     }
 
     @media screen and (max-width: 768px) {
@@ -677,12 +699,7 @@ ad by adsterra    <hr />
     });
   </script>
 
-<script type="text/javascript">
-   var uid = '342117';
-   var wid = '699120';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
+
 
 
 <!-- tabunder + url rotator -->
