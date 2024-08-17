@@ -1,0 +1,435 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            {% if site.adsense == "enabled" %}
+                {% include adsense-under-header.html %}
+            {% endif %}
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+          
+               
+
+{{content}}
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+crislaynerh
+ᴄʀɪꜱ ʀᴇᴢᴇɴᴅᴇ ♡
+_adiirggg
+_adiirggg
+Adriana Rangel
+miku7miku
+miku7miku
+Miku🎀 Fitness
+tgfitvibes3
+tgfitvibes3
+Tiffany Grullon
+307neci
+307neci
+•N E C I •
+palomaf.ok
+palomaf.ok
+Paloma Febbroni | Coach fitness y mentalidad
+missikonic
+missikonic
+Miss Ikonic | Women’s Online Coach
+wlisteny
+wlisteny
+Wlisteny Santos
+mikkmill
+mikkmill
+Chicago Hair Stylist/ Credit Consultant
+dguvhuyf
+dguvhuyf
+Dguvhuyf Dgiugvji
+marbello101
+marbello101
+marbello10
+valeriaflanders_
+valeriaflanders_
+Valeria Flanders 💞
+body_diosa_fitness
+body_diosa_fitness
+Rosalinda de León
+xx.miriansz
+xx.miriansz
+𝓜𝓲𝓻𝓲𝓪𝓷 𝓢𝓲𝓵𝓿𝓪
+emillyhiss
+emillyhiss
+EMILLY 🤍✨
+esterbronheart
+esterbronheart
+Ester Bron
+jausuers
+jausuers
+Jausuer
+tita_t28
+tita_t28
+Tita Torres
+yashaumen
+yashaumen
+Yashamen majette
+astrixcarolina
+astrixcarolina
+ASTRIX MARQUEZ 🦋
+itzelgarciarmz
+itzelgarciarmz
+𝙸𝚝𝚣𝚎𝚕 𝙶𝚊𝚛𝚌𝚒𝚊🌷
+fitness0202024
+fitness0202024
+fitness
+marrisgulledge
+marrisgulledge
+Marris Gulledge
+joelsantos2645
+joelsantos2645
+Joel Santos
+lindy.nzuza
+lindy.nzuza
+𝐋𝐢𝐧𝐝𝐲 𝐍𝐳𝐮𝐳𝐚 🎀
+nwe14437
+nwe14437
+Chloé
+maybeshannon_
+maybeshannon_
+Maybe Shannon
+isabellapirett
+isabellapirett
+𝓘𝓼𝓪𝓫𝓮𝓵𝓵𝓪 🦄
+maricela_valenciaaa
+maricela_valenciaaa
+Maricela valencia🤩🙏❤️
+anaaaa.z
+anaaaa.z
+Farhanah
+alonnn.fit
+alonnn.fit
+Alondra Delgado
+charliebronn_
+charliebronn_
+Charlie bron
+ameliabella_reels
+ameliabella_reels
+Amelia Bella
+alexaaa_narvaez
+alexaaa_narvaez
+Alexaaa Narvaez
+priscilasilvalopez
+priscilasilvalopez
+Pricila Mia Silva Lopez
+cupcakemelyy
+cupcakemelyy
+Melody
+nashleym18
+nashleym18
+Nashley Martinez
+manouchka_enjoylife495
+manouchka_enjoylife495
+lorenabautb
+lorenabautb
+Lorena Bautista
+hannahjoytv
+hannahjoytv
+Hannah Joy Gebresilassie
+lindinhatizz12
+lindinhatizz12
+musass152
+musass152
+musas152
+gemfyp
+gemfyp
+amandapaolagomez
+amandapaolagomez
+amanda paola gomez orozco
+deise.almeid
+deise.almeid
+Deise Almeida
+cococultr
+cococultr
+Coco Culture
+snowsephina
+snowsephina
+🌨SNOW SEPHINA🌨
+paulinialana
+paulinialana
+Alana e Udi
+isooykaro
+isooykaro
+Karo
+alessandravieira
+alessandravieira
+Alessandra
+karina1mg
+karina1mg
+karina Nunes
+folksfit
+folksfit
+Folksfit
+madisonskits
+madisonskits
+Madison <3
+lnstabunny
+lnstabunny
+indigobriggs_
+indigobriggs_
+Indigo Briggs Atlanta’s Realtor ®
+mariadiloner
+mariadiloner
+María Diloné R.
+lifestyle_gladita
+lifestyle_gladita
+Gladisleidys Gonzalez Martine
+anna.squats
+anna.squats
+✨A N N A✨🇮🇹🇺🇸
+maktub.07
+maktub.07
+ANNY CARABALLO
+thejenblanco
+thejenblanco
+viraljen
+monica_xvall
+monica_xvall
+Mónica
+almeidagleica
+almeidagleica
+Gleica Almeida de Souza
+_euluanasilvaa
+_euluanasilvaa
+Luana Silva
+fernanda.luiza.96
+fernanda.luiza.96
+Fernanda Luiza
+kedara.monee
+kedara.monee
+Kedara Monee ✨
+dilaysecret
+dilaysecret
+Dilay
+frase_polo
+frase_polo
+Joseph
+amyamyreelss
+amyamyreelss
+amyamy
+daianemoraes94
+daianemoraes94
+Day Moraes
+margaritatav1
+margaritatav1
+Zara. V 🍂
+justmohfit
+justmohfit
+Theemelaninpowerhouse
+chiquima17
+chiquima17
+chiquinquira
+babebaddiesfy
+babebaddiesfy
+Babe Baddies
+tymirataish
+tymirataish
+Tai Graves
+amandaa_kevelly
+amandaa_kevelly
+AMANDINHA ✨
+thecivy
+thecivy
+Ivy | Realtor ®️
+pame_marte0529
+pame_marte0529
+Pame_marte0529
+bailandord
+bailandord
+Bailando RD🇩🇴
+jessi__pa
+jessi__pa
+Jessi🌙
+the.andrea.show
+the.andrea.show
+Andrea
+mandin.mandin_oficial
+mandin.mandin_oficial
+Mandin Maibel
+nathaliariverag_
+nathaliariverag_
+NATHALIA RIVERA
+mecailanect
+mecailanect
+elainemenuzzo_oficial
+elainemenuzzo_oficial
+Elaine Menuzzo
+wholetalyssaoutt
+wholetalyssaoutt
+Alyssa Lee 🌸
+horasadat_official
+horasadat_official
+➹♥ᕼᑌᖇᗩ ᔕᗩᗪᗩT♥➹
+mariajosecuiser2022
+mariajosecuiser2022
+Maria Jose Cuiser
+mabelissanchez30
+mabelissanchez30
+Mabelis Sánchez
+jot.sandhu_26
+jot.sandhu_26
+Jot_sandhu
+exirabaex
+exirabaex
+Exira Baez
+claudia_carvalho4
+claudia_carvalho4
+Claudia Carvalho💕
+sharp_aesthetics
+sharp_aesthetics
+__aleidy__
+__aleidy__
+Aleidy 🖤
+rosafaithlawson
+rosafaithlawson
+Rosa Faith Lawson
+anayely_vp
+anayely_vp
+JL Jhøåň Prîņčs
+staceymj___
+staceymj___
+Stacey Mathews-Johnson | FL Real Estate Agent
+modelviralss
+modelviralss
+VIRAL REELS
+elsantodomi
+elsantodomi
+Surikato 🇩🇴
+candieshop
+candieshop
+CANDY🍭 | Petite Fashion Blogger
+loiem_merii
+loiem_merii
+x.xuus
+x.xuus
+دعاء دعاوي
+thejeansshopgh
+thejeansshopgh
+THE JEANS SHOP GH
+lolalolalolitaa
+</div></div></div></span>
+                
+                
+            </div>
+
+            <!-- Rating -->
+            {% if page.rating %}
+            <div class="rating mb-4 d-flex align-items-center">
+                <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+            </div>
+            {% endif %}
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+            
+
+
+
+            
+   
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+{% if page.comments != false %}
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                {% include disqus.html %}
+            </div>
+        </div>
+    </div>
+{% endif %}
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+{% if page.rating %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Thing",
+    "name": "{{ page.title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.display_name }}"
+  },
+  "datePublished": "{{ page.date | date:"%Y-%m-%d" }}",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.rating }}",
+    "bestRating": "5"
+  }
+}
+</script>
+{% endif %}
