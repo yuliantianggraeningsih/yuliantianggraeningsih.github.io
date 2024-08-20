@@ -33,39 +33,7 @@
 }
 </script>
 
-	<!--breadcrumb-->
-		<script type="application/ld+json">
-{
-	"@context": "http://schema.org/",
-	"@type": "BreadcrumbList",
-	"itemListElement": [
-		{
-			"@type": "ListItem",
-			"position": 1,
-			"name": "photo",
-			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?photo"
-		},
-		{
-			"@type": "ListItem",
-			"position": 2,
-			"name": "video",
-			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?video"
-		},
-		{
-			"@type": "ListItem",
-			"position": 3,
-			"name": "leaked contents",
-			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?leaked"
-		},
-		{
-			"@type": "ListItem",
-			"position": 4,
-			"name": "more collections",
-			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?collection"
-		}
-	]
-}
-</script><!--breadcrumb-->
+
 	
 	<!-- sitelinks -->
 <script type="application/ld+json">
@@ -82,38 +50,7 @@
 </script><!-- sitelinks -->
 	
 	
-	<!-- how to -->
-	<script type="application/ld+json">
-{
-	"@context": "http://schema.org/",
-	"@type": "HowTo",
-	"name": "{{ page.title }}",
-	"description": "{{ page.title }}",
-	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-	"totalTime": "PT57M",
-	"estimatedCost": {
-		"@type": "MonetaryAmount",
-		"currency": "USD",
-		"value": "2"
-	},
-	"step": [
-		{
-			"@type": "HowToStep",
-			"name": "find download link",
-			"text": "find download link on the page",
-			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
-		},
-		{
-			"@type": "HowToStep",
-			"name": "click download button",
-			"text": "click download button on the page",
-			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
-		}
-	]
-}
-</script><!-- how to -->
+	
 	
 <style>
   body {
@@ -244,29 +181,64 @@
     margin-bottom: 8px;
   }
 </style>
+
+
+
+  <!-- alt img -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dapatkan judul halaman
+      var pageTitle = '{{ page.title | escape }}';
+      
+      // Pilih semua elemen gambar di halaman
+      var images = document.querySelectorAll('img');
+      
+      // Loop melalui setiap gambar dan tambahkan atribut alt dan loading
+      images.forEach(function(image) {
+        image.setAttribute('alt', pageTitle);
+        image.setAttribute('loading', 'lazy');
+      });
+    });
+  </script><!-- alt img -->
+
+
 </head>
+
 <body>
 
-	<br /><br /><br />
-	<div class="col-12 mb-4">
-      <b> Featurer Posts </b>
-		<hr />
-        <div class="row">
-          {% for post in site.categories.flowering limit: 999 %}
-          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-            <div class="card">
-           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-           </a>
-              <div class="card-body">
-                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More
-                        </a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
+	<!--breadcrumb-->
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "photo",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?photo"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "video",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?video"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "leaked contents",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?leaked"
+		},
+		{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "more collections",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?collection"
+		}
+	]
+}
+</script><!--breadcrumb-->
 	
 <div class="header">
   <div class="container"><b>
@@ -326,6 +298,7 @@
     sidebar.classList.toggle('hide');
   }
 </script>
+
 
 
 	
@@ -396,12 +369,12 @@
     position: absolute;
     top: 0px;
     right: 10px;
-    background: #000000;
+    background: #00000000;
     color: #ff0000;
     border: none;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     font-size: 20px;
     line-height: 30px;
@@ -412,7 +385,7 @@
 
 <div class="overlay" id="interstitialAd">
   <div class="ad-content">
-    <button class="close-btn" onclick="closeAd()">X</button>
+    <button class="close-btn" onclick="closeAd()"><b>X</b></button>
     
 
  <script type="text/javascript">
