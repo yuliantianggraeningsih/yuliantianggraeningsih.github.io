@@ -4,20 +4,191 @@ layout: default
 permalink: "/categories.html"
 ---
 
-<div class="row listrecent">
-{% for category in site.categories %}
-<div class="section-title col-md-12 mt-4">
-<h2 id="{{ category[0] | replace: " ","-" }}">Category <span class="text-capitalize">{{ category[0] }}</span></h2>
-</div>
-{% assign pages_list = category[1] %}
-{% for post in pages_list %}
-{% if post.title != null %}
-{% if group == null or group == post.group %}
-{% include postbox.html %}
-{% endif %}
-{% endif %}
-{% endfor %}
-{% assign pages_list = nil %}
-{% assign group = nil %}
-{% endfor %}
-</div>
+
+
+
+
+
+<h2>   
+email marketing
+</h2>
+
+
+<div class="col-12 mb-4">
+               <div class="row">
+          {% for post in site.categories.email-marketing limit: 3 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+           </a>
+              <div class="card-body">
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script><center>
+<video id='4041' controls autoplay loop muted style="max-width:100%; height:auto;" >
+   <source src='https://video.twimg.com/ext_tw_video/1827061434326642688/pu/vid/avc1/802x360/9NLh2jLOtwh1fNYc.mp4' title='{{ page.title }}' type='video/mp4' />
+</video></center>
+<script type="application/javascript">
+    var testVideo = fluidPlayer(
+        "4041",
+{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 1,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoplay": true,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+	},
+	"vastOptions": {
+	"adList": [
+                    {
+                        "roll": "preRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=ada2ce975f0d25fb2eb0be99b4e7d14a"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": "1"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=b320bff569bb5535540366abcef11a09",
+                        "timer": "2"
+                    },
+{
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=f76eb4092d4b94ed2411172982571a87",
+                        "timer": "3"
+                    },
+		{
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": "4"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": "5"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 6
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 7
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 8
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 9
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 10
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 11
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 12
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=0265840d4e6bd543c018981a01edca89",
+                        "timer": 13
+                    },
+            ]
+        }
+}
+    );
+</script>
+
+<h2>ppc advertising</h2>
+<div class="col-12 mb-4">
+               <div class="row">
+          {% for post in site.categories.ppc limit: 3 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+           </a>
+              <div class="card-body">
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+<h2>
+affiliate Marketing  
+</h2>
+<div class="col-12 mb-4">
+               <div class="row">
+          {% for post in site.categories.affiliate-marketing limit: 3 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+           </a>
+              <div class="card-body">
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+<div class="jontor" loading="lazy" style="width:100%; height:5px; overflow:auto;">
+<br /><br /><br /><br />
+<script src="https://rawgit.com/rezamuhamad/rakinfo/master/sitemap.js"></script>
+<script src="https://www.ioma.my.id/feeds/posts/default/?start-index=1&max-results=6666&amp;alt=json-in-script&amp;callback=rak_info_Load"></script></div>
+
+  
