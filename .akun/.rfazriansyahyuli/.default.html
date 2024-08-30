@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png"/>
+<meta name="msvalidate.01" content="D6151F5DC8690B73D0BF930E3F286554" />
+<meta name="yandex-verification" content="81541d3e367b626f" />	
+
+	
+{% seo %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+<link href="{{ site.url }}/assets/css/screen.css" rel="stylesheet"/>
+
+<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet"/>
+
+<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.title }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+  "uploadDate": "{{ page.date }}",
+  "duration": "PT55M47S",
+  "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
+}
+</script>
+
+
+	
+	
+	
+	
+	
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:60px;
+    background-color: #228B22;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1010;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+/*  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  } */
+  .header nav {
+    text-align: right;
+  }
+  .header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;bc
+  }
+  .header nav ul li a:hover {
+    color: #ffd700; /* Gold */
+  }
+  .sidebar {
+  	text-align: center;
+    position: fixed;
+    top: 60px; /* Height of the header */
+    left: -700;
+    height: 100%; /* Adjusted for the height of the header */
+    width: auto;
+    background-color: #228B22;
+    color: #fff;
+    transition: transform 0.1s ease;
+    overflow: auto;
+    padding: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  .sidebar.hide {
+    transform: translateX(-550px);
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 5px;
+  }
+  .sidebar li {
+    padding: 5px;
+    background-color: #00000050;
+    border-radius: 7px;
+    width: 100%;
+  }
+  .sidebar li:last-child {
+    border-bottom: none;
+  }
+  .sidebar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  .sidebar li a:hover {
+    background-color: #555;
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 8px;
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+  h2, h3, h4 {
+    color: #228B22;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+</style>
+
+
+
+  <!-- alt img -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dapatkan judul halaman
+      var pageTitle = '{{ page.title | escape }}';
+      
+      // Pilih semua elemen gambar di halaman
+      var images = document.querySelectorAll('img');
+      
+      // Loop melalui setiap gambar dan tambahkan atribut alt dan loading
+      images.forEach(function(image) {
+        image.setAttribute('alt', pageTitle);
+        image.setAttribute('loading', 'lazy');
+      });
+    });
+  </script><!-- alt img -->
+
+
+</head>
+
+<body>
+
+	
+	<br /><br /><br />
+
+<div class="col-12 mb-4">
+        Faetured Posts
+        <div class="row">
+          {% for post in site.categories.aquatic limit: 3 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
+           </a>
+              <div class="card-body">
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+	
+	
+<div class="header">
+  <div class="container"><b>
+<a href="/" style="font-size: 24px; color:#fff;" >
+    {{ site.name }}
+    </a></b>
+</div>
+</div>
+
+<nav class="sidebar hide" id="sidebar">
+<div style="padding:10px" >
+    <p class="lead">
+        {{ site.description }}
+    </p> 
+</div>
+
+  <ul>
+  	
+    <li><a href="/flowering">Flowering Ornamental Plants</a></li>
+    
+    <li><a href="/foliage">Foliage Ornamental Plants</a></li>
+    
+    <li><a href="/hanging">Hanging Ornamental Plants</a></li>
+    
+    <li><a href="/bonsai">Miniature or Bonsai Ornamental Plants</a></li>
+    
+    <li><a href="/aquatic">Aquatic Ornamental Plants</a></li>
+    
+    <li><a href="/toxic">Toxic Ornamental Plants</a></li>
+    
+    <li><a href="/unique">Rare or Unique Ornamental Plants</a></li>
+	  <li><a href="/edible">Edible Ornamental Plants</a></li>
+	  <li><a href="/fragrant">Fragrant Ornamental Plants</a></li>
+    
+  </ul>
+  <div style="padding: 10px;">{% include search-lunr.html %}</div>
+</nav>
+
+<div class="content">
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+          <div class="site-content">
+
+<div class="container">
+            <div class="main-content">
+      {{ content }}
+      </div>     </div>
+        </div>
+
+
+</div>
+
+<br />
+
+<script>
+  function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('show');
+    sidebar.classList.toggle('hide');
+  }
+</script>
+
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+	<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags" >
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		</div>
+	</div>
+</div>
+
+	</div></div></div></span>
+	
+<footer class="footer">
+    <div class="container">
+    
+
+    
+       <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+      <b><a href="/About">About</a>&nbsp; •&nbsp;
+<a href="/terms-and-conditions">Terms and Conditions</a>&nbsp; •&nbsp;
+<a href="/privacy-policy">Privacy Policy</a>
+		    <br />
+		    Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a></b>
+		
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="{{ site.url }}/assets/js/mediumish.js"></script>
+
+{% if site.lazyimages == "enabled" %}
+<script src="{{ site.url }}/assets/js/lazyload.js"></script>
+{% endif %}
+
+<script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+{% endif %}
+    
+
+
+
+
+<style>
+  .overlay {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 340px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .ad-content {
+    position: relative;
+    background: #00000000;
+    padding: 0px;
+    border-radius: 5px;
+    max-width: 100%;
+    height: 50px;
+    overflow: auto;
+    text-align: center;
+  }
+  .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background: #00000000;
+    color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+  }
+</style>
+
+
+
+<div class="overlay" id="interstitialAd">
+  <div class="ad-content">
+    <button class="close-btn" onclick="closeAd()"><b>X</b></button>
+    
+
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '8785755b5fbf6100fda53d14feba27dc',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/8785755b5fbf6100fda53d14feba27dc/invoke.js"></script>
+    <br />
+	        <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script><center>
+<video id='my-videoo' controls autoplay loop muted style="max-width:100%; height:auto;" >
+   <source src='https://video.twimg.com/ext_tw_video/1161908304215302144/pu/vid/360x640/6yUS0cax9Ulck1N0.mp4' title='{{ page.title }}' type='video/mp4' />
+</video></center>
+<script type="application/javascript">
+    var testVideo = fluidPlayer(
+        "my-videoo",
+{
+	"layoutControls": {
+		"controlBar": {
+			"autoHideTimeout": 1,
+			"animated": true,
+			"autoHide": true
+		},
+		"htmlOnPauseBlock": {
+			"html": null,
+			"height": null,
+			"width": null
+		},
+		"autoplay": true,
+		"mute": true,
+		"allowTheatre": true,
+		"playPauseAnimation": true,
+		"playbackRateEnabled": true,
+		"allowDownload": true,
+		"playButtonShowing": true,
+		"fillToContainer": true,
+		"posterImage": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+	},
+	"vastOptions": {
+	"adList": [
+                    {
+                        "roll": "preRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=ef4cbd999a3567d73e9272f0b67d9c09"
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=6f6732348ac4680e3e347f51038ca52e",
+                        "timer": 1
+                    },
+                    {
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=b320bff569bb5535540366abcef11a09",
+                        "timer": 2
+                    },
+{
+                        "roll": "midRoll",
+                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=f76eb4092d4b94ed2411172982571a87",
+                        "timer": 3
+                    },
+            ]
+        }
+}
+    );
+</script>  
+	    <br />
+ <script type="text/javascript">
+	atOptions = {
+		'key' : '6ed47ee5b21512f5e3583e5ee9197ce6',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/6ed47ee5b21512f5e3583e5ee9197ce6/invoke.js"></script>
+<br />   
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'dee2007d4cadc5df02bfc3776e5acd51',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/dee2007d4cadc5df02bfc3776e5acd51/invoke.js"></script><br />
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'be9976e809fd1c45c33d7c9a661415f1',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/be9976e809fd1c45c33d7c9a661415f1/invoke.js"></script>
+    <br />
+   <script type="text/javascript">
+	atOptions = {
+		'key' : 'ea508a4860584ab835447a1f5910705b',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/ea508a4860584ab835447a1f5910705b/invoke.js"></script><br />
+<script type="text/javascript">
+	atOptions = {
+		'key' : '05e71e8fcd63fef26f82e71c68475ec9',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/05e71e8fcd63fef26f82e71c68475ec9/invoke.js"></script>
+<br />
+ 
+    
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '7c3b97aad1824c7440cf934a58fa68a3',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/7c3b97aad1824c7440cf934a58fa68a3/invoke.js"></script>
+
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : '3e944ec183e6b74a7c6b5e62802ef44d',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/3e944ec183e6b74a7c6b5e62802ef44d/invoke.js"></script><script type="text/javascript">
+	atOptions = {
+		'key' : '0754d1c0efd1dd2be5f6cf1d8181e995',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/0754d1c0efd1dd2be5f6cf1d8181e995/invoke.js"></script><script type="text/javascript">
+	atOptions = {
+		'key' : '23d605a3a8e234cd4fa0a7c3511a0257',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/23d605a3a8e234cd4fa0a7c3511a0257/invoke.js"></script><script type="text/javascript">
+	atOptions = {
+		'key' : 'ebcd82d251f6221c69f768090130c8d6',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/ebcd82d251f6221c69f768090130c8d6/invoke.js"></script><script type="text/javascript">
+	atOptions = {
+		'key' : '497321fec36c580006e1e8d580dd2798',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/497321fec36c580006e1e8d580dd2798/invoke.js"></script>
+	  
+  </div>
+</div>
+
+<script>
+  function closeAd() {
+    document.getElementById('interstitialAd').style.display = 'none';
+  }
+
+  setTimeout(closeAd, 15000); // Close the ad after 5 seconds
+</script>
+
+
+
+
+  <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Other meta tags and styles -->
+  <style>
+    /* CSS Styling for Back to Top Button */
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #228B22;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 40%;
+      text-decoration: none;
+      text-align: center;
+      z-index: 1000;
+      transition: opacity 0.3s ease-out;
+      border: 2px solid white;
+      font-size: 24px; /* Adjust icon size */
+      line-height: 1; /* Ensures the icon is vertically centered */
+    }
+
+    .back-to-top:hover {
+      background-color: #d14000;
+    }
+
+    @media screen and (max-width: 768px) {
+      .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <a id="back-to-top" href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
+    }
+
+    document.getElementById("back-to-top").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
+
+
+
+
+<!-- tabunder + url rotator -->
+<script>
+    // URL Feed Blogger
+    const feedUrl = 'https://www.ioma.my.id/feeds/posts/default/?start-index=1&max-results=6666&alt=json-in-script&callback=rak_info_Load';
+
+    // Fungsi untuk mengambil data dari feed
+    function fetchFeed() {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = feedUrl;
+            document.body.appendChild(script);
+
+            window.rak_info_Load = (data) => {
+                const entries = data.feed.entry.map(entry => entry.link.find(link => link.rel === 'alternate').href);
+                resolve(entries);
+            };
+
+            script.onerror = () => reject('Failed to load feed.');
+        });
+    }
+
+    // Fungsi untuk memilih URL secara acak dari feed
+    function getRandomUrl(urls) {
+        return urls[Math.floor(Math.random() * urls.length)];
+    }
+
+    // Fungsi untuk membuka tab baru dengan URL yang dirotasi
+    function openTabUnder(url) {
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        document.body.appendChild(a);
+        const evt = document.createEvent('MouseEvents');
+        evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        a.dispatchEvent(evt);
+        document.body.removeChild(a);
+    }
+
+    // Fungsi untuk memeriksa apakah tabunder sudah dibuka sebelumnya
+    function hasTabUnderOpened() {
+        return localStorage.getItem('tabunderOpened') === 'true';
+    }
+
+    // Fungsi untuk menandai bahwa tabunder sudah dibuka
+    function markTabUnderOpened() {
+        localStorage.setItem('tabunderOpened', 'true');
+    }
+
+    // Event listener untuk klik
+    document.addEventListener('click', async () => {
+        if (!hasTabUnderOpened()) {
+            try {
+                const urls = await fetchFeed();
+                const randomUrl = getRandomUrl(urls);
+                openTabUnder(randomUrl);
+                markTabUnderOpened();
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    });
+</script><!-- tabunder + url rotator -->
+
+	
+</body>
+</html>
