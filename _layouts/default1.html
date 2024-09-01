@@ -52,7 +52,7 @@
     left: 0;
     width: 100%;
     height:60px;
-    background-color: #006400;
+    background-color: #8B0000;
     color: #fff;
     padding: 10px 0;
     z-index: 1010;
@@ -100,7 +100,7 @@
     left: -700;
     height: 100%; /* Adjusted for the height of the header */
     width: auto;
-    background-color: #006400;
+    background-color: #8B0000;
     color: #fff;
     transition: transform 0.1s ease;
     overflow: auto;
@@ -155,7 +155,7 @@
     100% { opacity: 1; }
   }
   h2, h3, h4 {
-    color: #006400;
+    color: #8B0000;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -225,8 +225,9 @@
     <li><a href="/toxic">Toxic Ornamental Plants</a></li>
     
     <li><a href="/unique">Rare or Unique Ornamental Plants</a></li>
-    <li><a href="/edible">Edible Ornamental Plants</a></li>
+	  <li><a href="/edible">Edible Ornamental Plants</a></li>
 	  <li><a href="/fragrant">Fragrant Ornamental Plants</a></li>
+    
   </ul>
   <div style="padding: 10px;">{% include search-lunr.html %}</div>
 </nav>
@@ -238,7 +239,15 @@
 
 <div class="container">
             <div class="main-content">
+            
       {{ content }}
+      
+    
+  <div class="jontor" loading="lazy" style="width:100%; height:500px; overflow:auto;">
+<br /><br /><br /><br />
+<script src="https://rawgit.com/rezamuhamad/rakinfo/master/sitemap.js"></script>
+<script src="https://www.fazri.my.id/feeds/posts/default/?start-index=1&max-results=1500&amp;alt=json-in-script&amp;callback=rak_info_Load"></script></div>
+      
       </div>     </div>
         </div>
 
@@ -551,7 +560,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #006400;
+      background-color: #8B0000;
       color: #ffffff;
       padding: 10px;
       border-radius: 40%;
@@ -598,12 +607,7 @@
     });
   </script>
 
-<script type="text/javascript">
-   var uid = '342117';
-   var wid = '699120';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
+
 
 
 <!-- tabunder + url rotator -->
@@ -672,4 +676,3 @@
 	
 </body>
 </html>
-
